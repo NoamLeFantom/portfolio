@@ -1,0 +1,192 @@
+{
+  "projet2": {
+    "titre": "Eiffel tower _",
+    "description": "I released this Eiffel Tower to test my knowledge and my determination.",
+    "details": [
+      "3d",
+      "blender",
+      "modelling"
+    ],
+    "images": [
+      "/uploads/Eiffel tower __1.png"
+    ]
+  },
+  "projet3": {
+    "titre": "Cabourg city hall",
+    "description": "A model project for MetaverseGT.All process of creation was released on blender except foliage.",
+    "details": [
+      "3d",
+      "blender",
+      "lightning",
+      "modelling",
+      "texturing",
+      "baking"
+    ],
+    "images": [
+      "/uploads/Cabourg city hall_1.png"
+    ]
+  },
+  "projet4": {
+    "titre": "3D-2D alley draw",
+    "description": "For a challenge, I decide to represent an alley in atypical style for 3D creation.This style is in draw representation.",
+    "details": [
+      "2d",
+      "3d",
+      "blender",
+      "draw",
+      "lightning",
+      "modelling"
+    ],
+    "images": [
+      "/uploads/3D-2D alley draw_1.png"
+    ]
+  },
+  "projet5": {
+    "titre": "Go to the depth of the ocean",
+    "description": "I don't know why, but I have looked to the sky, and I see the deeper of ocean.I decide to recreate this see with fauna and flora and a diver going deeper.",
+    "details": [
+      "3d",
+      "blender"
+    ],
+    "images": [
+      "/uploads/Go to the depth of the ocean_1.png"
+    ]
+  },
+  "projet6": {
+    "titre": "Realistic 3D Sunset",
+    "description": "Inspired by a picture of sunset, I realized a scene with concrete and rock way.A realy hot sun be front of us and dazzle us.",
+    "details": [
+      "3d",
+      "blender",
+      "lightning",
+      "modelling",
+      "texturing"
+    ],
+    "images": [
+      "/uploads/Realistic 3D Sunset_1.png"
+    ]
+  },
+  "projet7": {
+    "titre": "Veronoi picture Geonodes",
+    "description": "I used Geometry nodes of blender to creating veronoi modification.I can modify aspect of any image, the density (resolution) and the shape of veronoi effect.",
+    "details": [
+      "2d",
+      "3d",
+      "blender",
+      "photography"
+    ],
+    "images": [
+      "/uploads/Veronoi picture Geonodes_1.png"
+    ]
+  },
+  "projet8": {
+    "titre": "Veronoi picture",
+    "description": "I used Substance Designer for creating veronoi modification and modified other parameter of image.",
+    "details": [
+      "photography"
+    ],
+    "images": [
+      "/uploads/Veronoi picture_1.png"
+    ]
+  },
+  "projet9": {
+    "titre": "Forge Conquest Tower",
+    "description": "A student project made with students of Gaming Campus.\nLot of items was realesed by me and I have teached for many production during this period.\nI'm modeling and unwrapped it on blender, and texturing with Substance Painter.",
+    "details": [
+      "3d",
+      "blender",
+      "lightning",
+      "modelling",
+      "texturing",
+      "substancepainter"
+    ],
+    "images": [
+      "/uploads/Forge Conquest Tower_1.png"
+    ]
+  },
+  "projet10": {
+    "titre": "Daily Challenge Crabe",
+    "description": "I'have created a scene on the theme was crab.I have modeled all the scene and created a specific shader for volumetric effect.The time I have take was 8 hours.",
+    "details": [
+      "3d",
+      "blender",
+      "shading",
+      "lightning",
+      "modelling"
+    ],
+    "images": [
+      "/uploads/Daily Challenge Crabe_1.png"
+    ]
+  },
+  "projet11": {
+    "titre": "Diorama",
+    "description": "This is a screen of a video diorama made during a school project in 3D.",
+    "details": [
+      "3d",
+      "blender",
+      "lightning",
+      "modelling",
+      "texturing"
+    ],
+    "images": [
+      "/uploads/Diorama_1.png"
+    ]
+  },
+  "projet12": {
+    "titre": "Datalogy size type of way in Cotes d'Armor",
+    "description": "A project in which I wanted to represent all types of paths in the Côtes d'Armor in France.This is a photograph of wool taking the form of different types of practices with the proportional size. I played with different orientations of lights to accentuate the colors.",
+    "details": [
+      "photography"
+    ],
+    "images": [
+      "/uploads/Datalogy size type of way in Cotes d'Armor_1.png",
+      "/uploads/92d73622572ae67b69698eb3c5eeb433",
+      "/uploads/54397f2b472174ae9579876caaed83f6"
+    ]
+  },
+  "projet13": {
+    "titre": "Infographic Nautile Ifremer",
+    "description": "An infographic realesed on Nautile, scientifique submarine of IFREMER at Brest.\n\nI have created the 3D model of Nautile for have lot of control on the render, on the effect and many things.",
+    "details": [
+      "3d",
+      "blender",
+      "lightning",
+      "modelling",
+      "texturing",
+      "compositing"
+    ],
+    "images": [
+      "/uploads/52f7b214017d994ff24305f30bf042fd.png",
+      "/uploads/13c88e14a5f9c3810903b33d690121fa.png",
+      "/uploads/2e744a0a79e756af189f47a2d01b7ac5.png",
+      "/uploads/b9fc4f05c6434fc000154179b69b9781.png",
+      "/uploads/7388ab88c74be9d2b821ea5530bdfd03.png",
+      "/uploads/9318fc4971569af1e0dc2e8081390b08.png"
+
+    ]
+  },
+  "projet14": {
+    "titre": "First vegetation 3D creations",
+    "description": "I have design and product lot of vegetation assets for a MMORPG game, Conquest Tower developped by a student team at Gaming Campus.",
+    "details": [
+      "3d",
+      "blender",
+      "lightning",
+      "modelling",
+      "texturing",
+      "substancepainter"
+    ],
+    "images": [
+      "/uploads/af463e0207694e50b0871207cc46d23e",
+      "/uploads/9c8a91a871f78048e9b8074cf7958bbe",
+      "/uploads/ca996fd302942e95feb41b9bce2f7a39",
+      "/uploads/103e053a0e7fae92bc014c09e2014776",
+      "/uploads/e8091316833360a4eb2c6a55a193eaca",
+      "/uploads/b91dc98bf6c94a71fdf1fdccc59753f6",
+      "/uploads/1303368c0ab82c39d52ccece3a896962",
+      "/uploads/53370de0d71fa3982917080ebd6de4a5",
+      "/uploads/a9987928022fcbc04f0ac4386057d302",
+      "/uploads/2c91bc7495d221fc37b0827f072e0905"
+    ]
+  }
+}

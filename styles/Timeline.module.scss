@@ -1,0 +1,82 @@
+
+/*////////////*/
+/* Conteneur principal de la timeline */
+.timeline {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Espace pour la ligne et les points */
+  }
+  
+  /* Ligne verticale */
+  .timeline_line {
+    position: absolute;
+    left: 25px;
+    /* Centré par rapport aux points */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    /* Couleur de la ligne */
+    z-index: 0;
+  }
+  .event_lineHz
+  {
+    position: absolute;
+    top: 10px;
+    height: 1px;
+    bottom: 0;
+    width: 25px;
+    left: -30px;
+    background-color: #ccc;
+  }
+  
+  /* Point pour chaque année */
+  .timeline_point {
+    position: relative;
+    z-index: 1;
+    /* Devant la ligne */
+  }
+  
+  .year_label {
+    margin-left: 20px;
+  }
+  
+  .timeline_point::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    /* Ajustez pour centrer sur la ligne */
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    /* Couleur des points */
+    border-radius: 50%;
+    /* Cercle */
+  }
+  
+  /* Événements */
+  .timeline_events {
+    margin-left: 30px;
+  }
+  
+  .timeline_event {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .timeline_event .event_line {
+    width: 2px;
+    background-color: #ccc;
+    position: absolute;
+    left: -30px;
+    /* Aligné avec la ligne */
+    top: 0;
+    bottom: 0;
+  }

@@ -1,0 +1,110 @@
+.acceuilTxt {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 0;
+    background: #949494;
+    top: 85px;
+
+    h1 {
+        grid-column: 1/3;
+        text-align: left;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+
+    .photoDeProfil {
+        grid-column: 1/3;
+        display: flex;
+        position: relative;
+        // border-radius: 10%;
+        max-width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        grid-column: 1/3;
+        text-align: left;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .dl_button {
+        align-self: center;
+        grid-column: 1/3;
+    }
+
+    @media screen and (min-width: 740px) {
+
+        h1 {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            width: 90%;
+            text-align: left;
+        }
+
+        .photoDeProfil {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            max-width: 90%;
+        }
+
+        .intro {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            font-size: 1.2rem;
+        }
+
+        .dl_button {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+
+        .photoDeProfil {
+            grid-column: 1/2;
+            grid-row: 2/4;
+            max-height: 100%;
+            padding: 5%;
+        }
+
+        .text {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .intro {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-left: 0rem;
+        }
+
+        .dl_button {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    }
+
+    @media screen and (min-width: 1800px) {
+        .intro {
+            font-size: 2rem;
+            margin-left: 0rem;
+        }
+
+        .dl_button {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            font-size: 2rem;
+        }
+    }
+}

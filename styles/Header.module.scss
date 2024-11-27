@@ -1,0 +1,130 @@
+.link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%; // prendra automatiquement la largeur de l'élément
+        height: 2px;
+        background-color: #ffffff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: left;
+    }
+
+    &:hover:after {
+        transform: scaleX(1); // barre qui s'étend
+    }
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+
+
+    .container {
+        h1 {
+            z-index: 2;
+            padding: 10px;
+        }
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        .hamburger {
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .menu {
+            list-style: none;
+            display: none;
+            position: fixed;
+            gap: 20px;
+            padding: 10px;
+            opacity: 0;
+            /* Caché par défaut */
+            transform: translateY(-100%);
+            /* En dehors de l'écran */
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        @media screen and (min-width: 740px) {
+            .hamburger {
+                display: none;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+
+            .menu {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                position: relative;
+                opacity: 1;
+                transform: translateY(0%);
+
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        /* Burger Menu Hidden */
+        .menuOpen {
+            position: fixed;
+            background-color: #333;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            // top: -100%;
+
+            opacity: 1;
+            transform: translateY(50%);
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+    }
+}
