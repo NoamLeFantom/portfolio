@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import styles from "../styles/Gallery.module.scss";
-import projects from "../data/projects.json";
+import projects from "../image-collection-manager/backend/data/projects.json";
 
 const Gallery = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
