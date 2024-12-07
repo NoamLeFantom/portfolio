@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import projects from "../../image-collection-manager/backend/data/projects.json";
+import projects from "../../public/src/data/projects.json";
 
 const ProjectDetails = () => {
   const router = useRouter();

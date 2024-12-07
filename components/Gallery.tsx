@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import styles from "../styles/Gallery.module.scss";
-import projects from "../image-collection-manager/backend/data/projects.json";
+import projects from "../public/src/data/projects.json";
 
 const Gallery = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -80,7 +80,7 @@ const Gallery = () => {
             className={styles.projectCard}
             onClick={() => handleClick(project)}
           >
-            /* <img src={'../..'+project.images[0]} alt={project.titre} />*/
+            <img src={'src'+project.images[0]} alt={project.titre} />
             <div className={styles.overlay}>
               <h3>{project.titre}</h3>
             </div>
