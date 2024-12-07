@@ -98,7 +98,7 @@ const Gallery = () => {
             <h3>{selectedProject.titre}</h3>
             <div className={styles.popupBody}>
               <img
-                src={selectedProject.images[currentImageIndex]}
+                src={'src'+selectedProject.images[currentImageIndex]}
                 alt={selectedProject.titre}
                 className={
                   selectedProject.images[currentImageIndex].includes(".jpg")
@@ -114,7 +114,7 @@ const Gallery = () => {
                     {selectedProject.details.map((detail: string, index: number) => (
                       <div key={index} className={styles.detailItem}>
                         <img
-                          src={`/ui/${detail}.svg`}
+                          src={`src/ui/${detail}.svg`}
                           alt={detail}
                           className={styles.detailImage}
                         />
