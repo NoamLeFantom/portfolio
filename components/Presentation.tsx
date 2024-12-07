@@ -8,7 +8,7 @@ const Presentation = () => {
       <h1>Noam LE GARSMEUR</h1>
       <img
         className={styles.photoDeProfil}
-        src="/uploads/Datalogy size type of way in Cotes d'Armor_1.png"
+        src="/image-collection-manager/backend/uploads/2e744a0a79e756af189f47a2d01b7ac5.png"
         alt="Contenue, photo de moi"
       />
       <div className={styles.text}>

@@ -80,7 +80,7 @@ const Gallery = () => {
             className={styles.projectCard}
             onClick={() => handleClick(project)}
           >
-            <img src={project.images[0]} alt={project.titre} />
+            /* <img src={'../..'+project.images[0]} alt={project.titre} />*/
             <div className={styles.overlay}>
               <h3>{project.titre}</h3>
             </div>

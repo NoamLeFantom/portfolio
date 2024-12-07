@@ -12,16 +12,6 @@ function ProjectList({ projects, addProject, removeProject, updateProjectImages,
   return (
     <div className="container">
       <h2>Liste des Projets</h2>
-      {Object.entries(projects).map(([id, project]) => (
-        <Project
-          key={id}
-          id={id}
-          project={project}
-          removeProject={removeProject}
-          updateProjectImages={updateProjectImages}
-          updateProjectDetails={updateProjectDetails}
-        />
-      ))}
       <div>
         <h3>Ajouter un nouveau projet</h3>
         <input
@@ -47,6 +37,17 @@ function ProjectList({ projects, addProject, removeProject, updateProjectImages,
         />
         <button className="button" onClick={handleAddProject}>Ajouter le projet</button>
       </div>
+      {Object.entries(projects).map(([id, project]) => (
+        <Project
+          key={id}
+          id={id}
+          project={project}
+          removeProject={removeProject}
+          updateProjectImages={updateProjectImages}
+          updateProjectDetails={updateProjectDetails}
+        />
+      ))}
+
     </div>
   );
 }
