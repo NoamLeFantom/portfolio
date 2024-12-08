@@ -6,9 +6,12 @@ import Header from "../components/Header";
 import Presentation from "../components/Presentation";
 import Ui_transitionR from "../components/Ui_transitionR";
 
-
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Noam_lg";
+  }, []); // Le titre sera défini quand le composant est monté
   return (
     <div>
       <Header />

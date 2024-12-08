@@ -12,10 +12,14 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.container}>
         <h1>
-          <a href="#" className={styles.logo}>Logo</a>
+          <a href="#" className={styles.logo}><img
+            src={`src/ui/Fantom.png`}
+            alt={'Logo du site'}
+            className={styles.detailImage}
+          /></a>
         </h1>
-        <button 
-          className={styles.hamburger} 
+        <button
+          className={styles.hamburger}
           onClick={toggleMenu}
           aria-label="Menu"
         >
