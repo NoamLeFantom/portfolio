@@ -63,7 +63,7 @@ const Gallery = () => {
   return (
     <div className={styles.galleryContainer}>
       {/* Barre de recherche */}
-      <div className={styles.searchBar}>
+      <div id='Projects' className={styles.searchBar}>
         <input
           type="text"
           placeholder="Search by tags..."

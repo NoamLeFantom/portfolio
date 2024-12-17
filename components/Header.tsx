@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../styles/Header.module.scss";
 
 const Header = () => {
@@ -7,15 +7,40 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+  
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Scroll vers le bas : cacher la navbar
+        setIsVisible(false);
+      } else {
+        // Scroll vers le haut : montrer la navbar
+        setIsVisible(true);
+      }
+  
+      setLastScrollY(currentScrollY);
+    };
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [lastScrollY]);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`}>
+
       <nav className={styles.container}>
         <h1>
-          <a href="#" className={styles.logo}><img
+          <a href=""><img
             src={`src/ui/Fantom.png`}
             alt={'Logo du site'}
-            className={styles.detailImage}
+            className={styles.logo}
           /></a>
         </h1>
         <button
@@ -51,11 +76,11 @@ const Header = () => {
           )}
         </button>
         <ul className={`${styles.menu} ${isOpen ? styles.menuOpen : ""}`}>
-          <li><a className={styles.link} href="index.html">Accueil</a></li>
-          <li><a className={styles.link} href="MesProjets.html">Projets</a></li>
-          <li><a className={styles.link} href="freebiz.html">Freebiz</a></li>
-          <li><a className={styles.link} href="#IDquiSuisJe">Qui suis-je</a></li>
-          <li><a className={styles.link} href="#contact">Contact</a></li>
+          <li><a className={styles.link} href="#">Accueil</a></li>
+          <li><a className={styles.link} href="#Projects">Projets</a></li>
+          <li><a className={styles.link} href="#">Freebiz</a></li>
+          <li><a className={styles.link} href="#">Qui suis-je</a></li>
+          <li><a className={styles.link} href="#">Contact</a></li>
         </ul>
       </nav>
     </header>

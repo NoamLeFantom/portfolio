@@ -24,19 +24,24 @@
 }
 
 .header {
-    background-color: #333;
-    color: white;
-    padding: 0px 0px;
     position: fixed;
-    width: 100%;
-    z-index: 2;
-    top: 0px;
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     .container {
         h1 {
             z-index: 2;
-            padding: 10px;
+            padding: 5px;
         }
 
         display: flex;
@@ -48,6 +53,7 @@
             text-decoration: none;
             color: white;
             font-size: 24px;
+            max-width: 60px;
         }
 
         .hamburger {
@@ -81,6 +87,7 @@
         }
 
         @media screen and (min-width: 740px) {
+
             .hamburger {
                 display: none;
                 background: none;
@@ -95,7 +102,7 @@
                 position: relative;
                 opacity: 1;
                 transform: translateY(0%);
-
+                margin-right: 25px;
 
                 li {
                     a {
@@ -126,5 +133,16 @@
             justify-content: center;
             z-index: 1;
         }
+    }
+    @media screen and (min-width: 740px) {
+    &.visible {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    
+      &.hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
     }
 }
