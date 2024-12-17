@@ -13,7 +13,7 @@ export default function Home() {
     document.title = "Noam_lg";
   }, []); // Le titre sera défini quand le composant est monté
   return (
-    <div class='GlobalPage'>
+    <div className={'GlobalPage'}>
       <Header />
       <Presentation/>
       <Ui_transitionR className={"Left"}/>
