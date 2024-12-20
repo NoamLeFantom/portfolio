@@ -36,13 +36,11 @@ const Header = () => {
     <header className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`}>
 
       <nav className={styles.container}>
-        <h1>
           <a href=""><img
             src={`src/ui/Fantom.png`}
             alt={'Logo du site'}
             className={styles.logo}
           /></a>
-        </h1>
         <button
           className={styles.hamburger}
           onClick={toggleMenu}

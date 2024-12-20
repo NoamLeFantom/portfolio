@@ -177,5 +177,24 @@
     "images": [
       "/uploads/FX Davinci Resolve.png"
     ]
+  },
+
+  "projet15": {
+    "titre": "Onfido",
+    "description": "Réalisation d'un projet de design d'expérience sur le théme des wallet ID blabla",
+    "details": [
+      "figma",
+      "DavinciResolve",
+      "Blender"
+    ],
+    "images": [
+      "/uploads/0f8d1831ed728cbfbd74fedc20052ebb",
+      "/uploads/ef6cb85b86f9c25415d84e8a7a6c75fe",
+      "/uploads/195ef9ed868998996bd98ae9f894fd28",
+      "/uploads/3f724bbaa19e6473a7233eaca82d669a",
+      "/uploads/c236b553464b31867df727735dfb3a3b",
+      "/uploads/adb82b2d1fdaa58d6c6d0cb762fb8cb6"
+
+    ]
   }
 }

@@ -15,15 +15,15 @@ export default function Home() {
   return (
     <div className={'GlobalPage'}>
       <Header />
-      <Presentation/>
-      <Ui_transitionR className={"Left"}/>
+      <Presentation BackgroundFill={"#ADADAD"}/>
+      <Ui_transitionR className={"Left"} BackgroundFill={"#ADADAD"}/>
       <h1>Ma banque de projets</h1>
       <p>Découvrez l'ensemble de mes projets</p>
       <p>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
       <Gallery />
       {/* Autres sections */}
       <Timeline data={timelineData} />
-      <Ui_transitionR/>
+      <Ui_transitionR className={"Left"} BackgroundFill={"#ADADAD"}/>
     </div>
   );
 }

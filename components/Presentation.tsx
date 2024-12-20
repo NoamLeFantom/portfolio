@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "../styles/Presentation.module.scss";
 
+type ColorBackground = {
+  BackgroundFill?:string;
+};
 
-const Presentation = () => {
+const Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
+
   return (
-    <div className= { styles.acceuilTxt } >
+    <div className= { styles.acceuilTxt } style={{background:`${BackgroundFill}`}} >
     <h1>Noam LE GARSMEUR </h1>
       < img
   className = { styles.photoDeProfil }

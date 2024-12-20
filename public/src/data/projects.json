@@ -86,7 +86,8 @@
       "photography"
     ],
     "images": [
-      "/uploads/Veronoi picture_1.png"
+      "/uploads/Veronoi picture_1.png",
+      "/uploads/4a2564a4bc6da7b43a4f5fef09947cc7"
     ]
   },
   "projet9": {
@@ -165,14 +166,21 @@
     ]
   },
   "projet14": {
-    "titre": "FX Davinci Resolve",
-    "description": "During my work-study program, I worked on a number of transitions and text animations using the nodal fusion compositing system,  I wanted to make them parameterizable so that I could reuse them without having to modify the nodal system. The most complicated part was organizing the control panels, since it is necessary to enter the generated file with a text editor. The basic code is a congener of lua.",
+    "titre": "Onfido",
+    "description": "Réalisation d'un projet de design d'expérience sur le théme des wallet ID blabla",
     "details": [
-      "video",
-      "2d",
-      "lua",
-      "davinciR"
+      "figma",
+      "DavinciResolve",
+      "Blender"
     ],
-    "images": ["/uploads/FX Davinci Resolve.png"]
+    "images": [
+      "/uploads/0f8d1831ed728cbfbd74fedc20052ebb",
+      "/uploads/ef6cb85b86f9c25415d84e8a7a6c75fe",
+      "/uploads/195ef9ed868998996bd98ae9f894fd28",
+      "/uploads/3f724bbaa19e6473a7233eaca82d669a",
+      "/uploads/c236b553464b31867df727735dfb3a3b",
+      "/uploads/adb82b2d1fdaa58d6c6d0cb762fb8cb6"
+
+    ]
   }
 }

@@ -30,7 +30,8 @@
   width: 100%;
   background-color: #333;
   color: white;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -39,10 +40,6 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     .container {
-        h1 {
-            z-index: 2;
-            padding: 5px;
-        }
 
         display: flex;
         align-items: center;
