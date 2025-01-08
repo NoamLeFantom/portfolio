@@ -8,39 +8,39 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   const [isVisible, setIsVisible] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
-  
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-  
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Scroll vers le bas : cacher la navbar
-        setIsVisible(false);
-      } else {
-        // Scroll vers le haut : montrer la navbar
-        setIsVisible(true);
-      }
-  
-      setLastScrollY(currentScrollY);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      // Scroll vers le bas : cacher la navbar
+      setIsVisible(false);
+    } else {
+      // Scroll vers le haut : montrer la navbar
+      setIsVisible(true);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, [lastScrollY]);
+  }, [lastScrollY]);
 
   return (
     <header className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`}>
 
       <nav className={styles.container}>
-          <a href=""><img
-            src={`src/ui/Fantom.png`}
-            alt={'Logo du site'}
-            className={styles.logo}
-          /></a>
+        <a href="/"><img
+          src={`src/ui/Fantom.png`}
+          alt={'Logo du site'}
+          className={styles.logo}
+        /></a>
         <button
           className={styles.hamburger}
           onClick={toggleMenu}
@@ -74,11 +74,12 @@ const Header = () => {
           )}
         </button>
         <ul className={`${styles.menu} ${isOpen ? styles.menuOpen : ""}`}>
-          <li><a className={styles.link} href="#">Accueil</a></li>
-          <li><a className={styles.link} href="#Projects">Projets</a></li>
+          <li><a className={styles.link} href="/">Accueil</a></li>
+          <li><a className={styles.link} href="/#Projects">Projets</a></li>
           <li><a className={styles.link} href="#">Freebiz</a></li>
           <li><a className={styles.link} href="#">Qui suis-je</a></li>
           <li><a className={styles.link} href="#">Contact</a></li>
+          <li><a className={styles.link} href="SkillsPage">Cartographie de Compétences</a></li>
         </ul>
       </nav>
     </header>

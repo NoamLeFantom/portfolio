@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    { "id": "Entreprendre", "group": 1 },
+    { "id": "gestion de projet", "group": 1 },
+
+    { "id": "Comprendre", "group": 2 },
+    { "id": "audit", "group": 2 },
+
+    { "id": "Developper", "group": 3 },
+    { "id": "intégration", "group": 3 },
+
+    { "id": "Concevoir", "group": 4 },
+    { "id": "stratégie de communication", "group": 4 },
+    { "id": "marketing", "group": 4 },
+
+    { "id": "Exprimer", "group": 5 },
+    { "id": "langues", "group": 5 }
+    
+  ],
+  "links": [
+    { "source": "Entreprendre", "target": "gestion de projet", "value": 1 },
+    { "source": "Comprendre", "target": "audit", "value": 1 },
+    { "source": "Developper", "target": "intégration", "value": 1 },
+    { "source": "Concevoir", "target": "stratégie de communication", "value": 1 },
+    { "source": "Concevoir", "target": "marketing", "value": 1 },
+    { "source": "Exprimer", "target": "langues", "value": 1 }
+  ]
+}

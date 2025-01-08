@@ -107,7 +107,7 @@ const Gallery = () => {
                 }
               />
               <div className={styles.popupDescription}>
-                <p>{selectedProject.description}</p>
+                <p className={styles.popupDescription}>{selectedProject.description}</p>
                 <div className={styles.detailsSection}>
                   <h4>Details</h4>
                   <div className={styles.detailsList}>

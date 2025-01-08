@@ -182,5 +182,18 @@
       "/uploads/adb82b2d1fdaa58d6c6d0cb762fb8cb6"
 
     ]
+  },
+  "projet15": {
+    "titre": "FX Davinci Resolve",
+    "description": "During my work-study program, I worked on a number of transitions and text animations using the nodal fusion compositing system, I wanted to make them parameterizable so that I could reuse them without having to modify the nodal system. The most complicated part was organizing the control panels, since it is necessary to enter the generated file with a text editor. The basic code is a congener of lua.",
+    "details": [
+      "video",
+      "DavinciResolve",
+      "2d",
+      "lua"
+    ],
+    "images": [
+      "/uploads/FX Davinci Resolve.png"
+    ]
   }
 }

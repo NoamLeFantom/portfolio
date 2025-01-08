@@ -1,0 +1,275 @@
+{
+    "name": "Root",
+    "children": 
+    [
+        {
+            "name": "Compétences sociales (inter-personnelles)",
+            "children": [
+                {
+                    "name": "Communication",
+                    "children": [
+                        {
+                            "name": "Communication - Communiquer à l'oral et à l'écrit pour transmettre des idées et des informations",
+                            "children": [
+                                {
+                                    "name": "Ecouter activement son interlocuteur (le laisser s'exprimer, sans l'interrompre, reformuler, décoder le non-verbal, poser des questions ouvertes)",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Travail en groupe et en équipe",
+                    "children": [
+                        {
+                            "name": "Travailler en groupe et en équipe",
+                            "children": [
+                                {
+                                    "name": "S'intégrer au sein d'une équipe de travail",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Coordination de groupe : faculté d'agencer des activités et des rôles de différents groupes en tenant en compte leurs compétences et leurs contraintes afin d'atteindre les objectifs",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Empathie : faculté de se mettre à la place de l'autre, de se décentrer et de comprendre le point de vue de l'autre",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Partage et réception de feedback : faculté de donner ses retours, d'entendre et d'intégrer les retours des autres sur une présentation, un projet",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Gestion des conflits",
+                    "children": [
+                        {
+                            "name": "Gestion des conflits - prévenir et gérer des tensions et des conflits",
+                            "children": [
+                                {
+                                    "name": "Prévenir des tensions et gérer des conflits entre deux ou plusieurs parties, ce qui implique une analyse, une régulation et une résolution",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Négociation",
+                    "children": [
+                        {
+                            "name": "Négociation - Participer et mener des négociations",
+                            "children": [
+                                {
+                                    "name": "Influence et persuasion : faculté de convaincre ou de faire passer des idées pour nourrir la prise de décision",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Persévérance : faculté de poursuivre ses objectifs et de demeurer ferme et constant dans les efforts indépendamment des difficultés rencontrées et/ou des échecs subis.",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Diplomatie : faculté de trouver des compromis acceptables et/ou un consensus avec ses interlocuteurs.",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compétences personnelles (intra-personnelles)",
+            "children": [
+                {
+                    "name": "Leadership positif",
+                    "children": [
+                        {
+                            "name": "Leadership positif",
+                            "children": [
+                                {
+                                    "name": "Confiance en soi : faculté de connaitre, d'exprimer et de dépasser les limites de ses aptitudes et de ses qualités",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Responsabilité : faculté de se sentir personnellement concerné par la bonne réalisation des tâches, des mandats ou des projets et d'assumer son rôle dans leur accomplissement",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Autonomie : faculté d'exprimer ses idées, de mener des projets et de réaliser ses objectifs en limitant les besoins de supervision ou de soutien et les interférences ou contraintes extérieurs",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Motivation et implication : faculté de s'investir, d'orienter son action et de nourrir une satisfaction et un enthousiasme vis-à-vis d'une organisation, d'un projet ou d'un objectif personnel",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Mobilisation de réseau : faculté de maintenir des relations durables avec les membres de son réseau, d'en motiver l'activité, et de les solliciter pour un conseil, un appui, une participation à un projet, etc",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Auto-évaluation",
+                    "children": [
+                        {
+                            "name": "Auto-évaluation",
+                            "children": [
+                                {
+                                    "name": "Introspection et réflexivité : faculté de porter un regard sur soi (action, parcours) et de comprendre, en se décentrant, sa propre activité, sa propre position, ses propres sentiments et émotions, leurs causes et leurs conséquences",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Ethique : faculté d'agir ou d'évaluer son action en intégrant ses convictions et ses valeurs et/ou celles défendues par son groupe ou son organisation",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Contrôle de soi : faculté de gérer ses émotions et ses impulsions dans des situations ordinaires et inhabituelles",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Fixation d'objectifs : faculté d'établir de façon précise des étapes et des buts dans son action et d'en vérifier la tenue au fur et à mesure de sa réalisation",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Adaptabilité",
+                    "children": [
+                        {
+                            "name": "Adaptabilité",
+                            "children": [
+                                {
+                                    "name": "Gestion de l'incertitude et du changement : faculté d'aborder le changement, de mener ses réflexions ",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Gestion du stress : faculté de reconnaitre une situation générant une tension conflictuelle et d'agir en préservant au mieux ses facultés d'action (ressources, émotions) et celles du groupe",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Réactivité : faculté de réagir positivement face à un événement imprévu, une sollicitation, un problème et d'y répondre rapidement",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compétences méthodologiques",
+            "children": [
+                {
+                    "name": "Apprendre à apprendre",
+                    "children": [
+                        {
+                            "name": "Apprendre à apprendre",
+                            "children": [
+                                {
+                                    "name": "Apprentissage individuel : faculté de comprendre, d'organiser et de maitriser par soi-même un apprentissage autonome",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Apprentissage collectif : faculté d'apprendre à partir du partage des connaissances et de la pratique, dans le cadre de projets ou de groupes de travail formels ou informels.",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Compétences analytiques",
+                    "children": [
+                        {
+                            "name": "Compétences analytiques",
+                            "children": [
+                                {
+                                    "name": "Collecte et traitement de données : faculté de rechercher et de classer l'information et les éléments de cadrage ou d'une activité (source, méthodologie, règlement, etc) pour en préparer l'utilisation",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Mener une recherche, une veille d'informations sur le secteur breton",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Problématisation : faculté de formuler un questionnement permettant de délimiter et d'approfondir la réflexion, la recherche ou l'activité",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Analyse de l'information : faculté d'identifier et de comprendre les différents éléments d'une information ou d'une situation et de les mettre en lien avec son propre questionnement et/ou sa propre activité",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Synthèse de l'information : faculté d'évaluer l'importance ou la pertinence de chaque élément d'une ou plusieurs informations afin d'en préparer la diffusion ou l'appropriation",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Esprit critique : faculté d'observer et de questionner rationnellement un discours ou une situation, à partir de ressources externes, de connaissances, de pratiques ou d'émotions",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Créativité et Innovation",
+                    "children": [
+                        {
+                            "name": "Créativité et Innovation",
+                            "children": [
+                                {
+                                    "name": "Curiosité : faculté de s'ouvrir, d'observer et de s'intéresser à des connaissances, idées, méthodes, initiatives, techniques nouvelles, environnement",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Imagination : faculté d'illustrer, de se représenter ou d'inventer des théories, des idées, des images, des concepts, des symboles, des situations…",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Esprit d'initiative : faculté d'oser et de proposer, de saisir des opportunités et de prendre des risques dans ses propositions et ses actions",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Résolution de problèmes",
+                    "children": [
+                        {
+                            "name": "Résolution de problèmes",
+                            "children": [
+                                {
+                                    "name": "Faculté à comprendre, analyser, synthétiser un problème et / ou une situation complexe",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Faculté à modéliser un problème ou poser des hypothèses",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Faculté à mettre en œuvre des solutions appropriées pour la résolution d'un problème et / ou une situation complexe",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Faculté à mettre en place et respecter un plan d'actions (objectifs et délais)",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <title>FicheMémoire - Visualisation</title>
+</head>
+<header>
+    <nav class="container_menuBurger">
+        <div class="logo"><a href="index.html">Portfolio.</a></div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a class="menuItem" href="index.html">Accuille</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="form.html"> Faire mes fiches mémoire</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="fichememoire.html" style="color: #fff;">Mes fiches mémoire</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="sunburst.html">Sunburst MMI</a>
+                </li>
+            </ul>
+        </div>
+        <button class="hamburger icon-45px">
+            <svg id="ic_menu_interactionA" class="" width="31" height="23" viewBox="0 0 31 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0312 11.5C30.0312 10.7233 29.4016 10.0938 28.625 10.0938H2.375C1.59835 10.0938 0.96875 10.7233 0.96875 11.5C0.96875 12.2767 1.59835 12.9062 2.375 12.9062H28.625C29.4016 12.9062 30.0312 12.2767 30.0312 11.5Z"
+                    fill="#264653" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0312 2.125C30.0312 1.34835 29.4016 0.71875 28.625 0.71875H2.375C1.59835 0.71875 0.96875 1.34835 0.96875 2.125C0.96875 2.90165 1.59835 3.53125 2.375 3.53125H28.625C29.4016 3.53125 30.0312 2.90165 30.0312 2.125Z"
+                    fill="#264653" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0312 20.875C30.0312 20.0983 29.4016 19.4688 28.625 19.4688H2.375C1.59835 19.4688 0.96875 20.0983 0.96875 20.875C0.96875 21.6517 1.59835 22.2812 2.375 22.2812H28.625C29.4016 22.2812 30.0312 21.6517 30.0312 20.875Z"
+                    fill="#264653" />
+            </svg>
+            <svg id="ic_menu_interactionB" class="ic_menu_none_visibility" width="25" height="27"
+                viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.25" y1="-1.25" x2="32.8092" y2="-1.25"
+                    transform="matrix(0.679134 -0.734015 0.679134 0.734015 1.86914 27)" stroke="#264653"
+                    stroke-width="2.5" stroke-linecap="round" />
+                <line x1="1.25" y1="-1.25" x2="32.8092" y2="-1.25"
+                    transform="matrix(0.679134 0.734015 -0.679134 0.734015 0 2)" stroke="#264653" stroke-width="2.5"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+    </nav>
+</header>
+<script>
+    ///////////////////////////////////////////
+    const menu = document.querySelector(".menu");
+    const menuItems = document.querySelectorAll(".menuItem");
+    const hamburger = document.querySelector(".hamburger");
+    const closeIcon = document.querySelector(".closeIcon");
+    const menuIcon = document.querySelector(".menuIcon");
+
+    const ic_menuA = document.querySelector("#ic_menu_interactionA");
+    const ic_menuB = document.querySelector("#ic_menu_interactionB");
+
+    function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            ic_menuA.classList.remove("ic_menu_none_visibility");
+            ic_menuB.classList.add("ic_menu_none_visibility");
+        } else {
+            menu.classList.add("showMenu");
+            ic_menuA.classList.add("ic_menu_none_visibility");
+            ic_menuB.classList.remove("ic_menu_none_visibility");
+        }
+    }
+
+    hamburger.addEventListener("click", toggleMenu);    
+</script>
+<body>
+    <div></div><br>
+    <div></div><br>
+    <div></div><br>
+    <div></div><br>
+    <button onclick="imprimerPartie()">Imprimer la partie spécifiée</button>
+
+    <div id="content"></div>
+    <script type="module" src="js/fichememoire.js"></script>
+    <script>
+        function imprimerPartie() {
+            var contenu = document.getElementById('content').innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = contenu;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+</body>
+    
+</html>
+    
