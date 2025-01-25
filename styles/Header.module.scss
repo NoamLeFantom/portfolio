@@ -40,7 +40,6 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     .container {
-
         display: flex;
         align-items: center;
         width: 100%;
@@ -48,6 +47,9 @@
         &:first-child
         {
             padding-left: 12px;
+            z-index: 2;
+        }
+        a{
             z-index: 2;
         }
         .logo {

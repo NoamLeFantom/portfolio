@@ -1,13 +1,16 @@
 import * as d3 from "d3";
 
 export function createForceGraph(container, data, legendData) {
-  const width = 928;
-  const height = 680;
+  const width = 1000;
+  const height = 350;
 
   const color = d3.scaleOrdinal(d3.schemeCategory10);
 
   const links = data.links.map((d) => ({ ...d }));
-  const nodes = data.nodes.map((d) => ({ ...d }));
+  const nodes = data.nodes.map((d) => ({
+    ...d,
+    highlighted: d.id.startsWith("Ressource"), // Ajouter une propriété pour repérer les ressources
+  }));
 
   const simulation = d3
     .forceSimulation(nodes)
@@ -26,6 +29,7 @@ export function createForceGraph(container, data, legendData) {
     .attr("viewBox", [-width / 2, -height / 2, width, height])
     .attr("style", "max-width: 100%; height: auto;");
 
+  // Liens
   const link = svg
     .append("g")
     .attr("stroke", "#999")
@@ -35,6 +39,7 @@ export function createForceGraph(container, data, legendData) {
     .join("line")
     .attr("stroke-width", (d) => Math.sqrt(d.value || 1));
 
+  // Nœuds
   const node = svg
     .append("g")
     .attr("stroke", "#fff")
@@ -42,8 +47,25 @@ export function createForceGraph(container, data, legendData) {
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", 5)
-    .attr("fill", (d) => color(d.group));
+    .attr("r", (d) => (d.highlighted ? 6 : 5)) // Augmente la taille des ressources
+    .attr("fill", (d) => (d.highlighted ? "#53c19b" : color(d.group))) // Couleur spéciale pour les ressources
+    .attr("stroke", (d) => (d.highlighted ? "#2c624f " : "#")); // Bordure différente pour les ressources
+
+  // Etiquettes (texte visible pour les ressources uniquement)
+  svg
+    .selectAll(".label")
+    .data(nodes)
+    // .join("text")
+    // .filter((d) => d.highlighted) // Seulement pour les ressources
+    // .attr("class", "label")
+    // .attr("x", 10)
+    // .attr("y", 5)
+    // .text((d) => d.id)
+    // .attr("fill", "#ff5722")
+    // .attr("font-size", "8px")
+    // .attr("display","hidden")
+    // .attr("font-weight", "regular")
+    ;
 
   node.append("title").text((d) => d.id);
 
@@ -63,6 +85,10 @@ export function createForceGraph(container, data, legendData) {
       .attr("y2", (d) => d.target.y);
 
     node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+
+    svg.selectAll(".label")
+      .attr("x", (d) => d.x + 10)
+      .attr("y", (d) => d.y + 5);
   });
 
   function dragstarted(event) {
@@ -82,7 +108,7 @@ export function createForceGraph(container, data, legendData) {
     event.subject.fy = null;
   }
 
-  // Add the legend
+  // Ajouter la légende
   const legend = d3
     .select(container)
     .append("div")
@@ -92,8 +118,16 @@ export function createForceGraph(container, data, legendData) {
     .style("margin-top", "10px");
 
   legendData.forEach((item) => {
-    const legendItem = legend.append("div").style("display", "flex").style("align-items", "center").style("gap", "5px");
-    legendItem.append("div").style("width", "15px").style("height", "15px").style("background-color", item.color);
+    const legendItem = legend
+      .append("div")
+      .style("display", "flex")
+      .style("align-items", "center")
+      .style("gap", "5px");
+    legendItem
+      .append("div")
+      .style("width", "15px")
+      .style("height", "15px")
+      .style("background-color", item.color);
     legendItem.append("span").text(item.label);
   });
 

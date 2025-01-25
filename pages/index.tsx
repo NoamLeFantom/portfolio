@@ -18,8 +18,8 @@ export default function Home() {
       <Presentation BackgroundFill={"#ADADAD"}/>
       <Ui_transitionR className={"Left"} BackgroundFill={"#ADADAD"}/>
       <h1>Ma banque de projets</h1>
-      <p>Découvrez l'ensemble de mes projets</p>
-      <p>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
+      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
+      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
       <Gallery />
       {/* Autres sections */}
       <Timeline data={timelineData} />
