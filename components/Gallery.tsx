@@ -2,7 +2,11 @@ import { useState, useRef } from "react";
 import styles from "../styles/Gallery.module.scss";
 import projects from "../public/src/data/projects.json";
 
-const Gallery = () => {
+type ColorBackground = {
+  BackgroundFill?: string;
+};
+
+const Gallery : React.FC<ColorBackground> = ({ BackgroundFill }) => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>(""); // État pour le terme de recherche
@@ -61,7 +65,10 @@ const Gallery = () => {
   };
 
   return (
-    <div className={styles.galleryContainer}>
+    <div className={styles.galleryContainer} style={{ background: `${BackgroundFill}` }}>
+      <h1>Ma banque de projets</h1>
+      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
+      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
       {/* Barre de recherche */}
       <div id='Projects' className={styles.searchBar}>
         <input

@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/Header.module.scss";
 
-const Header = () => {
+type ColorBackground = {
+  BackgroundFill?: string;
+};
+
+
+const Header : React.FC<ColorBackground> = ({ BackgroundFill }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -33,7 +38,7 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <header className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`}>
+    <header className={`${styles.header} ${isVisible ? styles.visible : styles.hidden}`} style={{ background: `${BackgroundFill}` }}>
 
       <nav className={styles.container}>
         <a href="/"><img
@@ -73,7 +78,7 @@ const Header = () => {
             </svg>
           )}
         </button>
-        <ul className={`${styles.menu} ${isOpen ? styles.menuOpen : ""}`}>
+        <ul className={`${styles.menu} ${isOpen ? styles.menuOpen : ""}`} style={{ background: `${BackgroundFill}` }}>
           <li><a className={styles.link} href="/">Accueil</a></li>
           <li><a className={styles.link} href="/#Projects">Projets</a></li>
           <li><a className={styles.link} href="#">Freebiz</a></li>

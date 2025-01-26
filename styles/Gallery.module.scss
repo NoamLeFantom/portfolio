@@ -6,12 +6,16 @@
     gap: 20px;
     padding: 20px;
     position: relative;
-    top: 85px;
 
     @media screen and (min-width: 445px) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
+}
+
+.galleryContainer
+{
+    color:#3D312E;
 }
 
 .projectCard {
@@ -181,6 +185,7 @@
         color: #333;
         font-size: 20px;
         cursor: pointer;
+        z-index: 1;
     }
 
     .buttonContainer {
@@ -261,9 +266,9 @@
 }
 
 .searchBar {
-    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
+    padding: 20px;
 
     input {
         width: 100%;

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../styles/Presentation.module.scss";
 
+import Ui_transitionR from "../components/Ui_transitionR";
+
 type ColorBackground = {
   BackgroundFill?: string;
 };
@@ -25,12 +27,6 @@ const Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           Mon sens du travail en autonomie combiné à ma capacité à travailler en équipe me permettent de me rendre très flexible selon les situations.
         </p>
       </div>
-      < a
-        className={styles.link}
-        href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing"
-      >
-        Télécharger mon CV
-      </a>
     </div>
   );
 };

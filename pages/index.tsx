@@ -14,16 +14,25 @@ export default function Home() {
   }, []); // Le titre sera défini quand le composant est monté
   return (
     <div className={'GlobalPage'}>
-      <Header />
-      <Presentation BackgroundFill={"#ADADAD"}/>
-      <Ui_transitionR className={"Left"} BackgroundFill={"#ADADAD"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#E0694B"} BackgroundFill={"#4EDB7D"}/>
+      <Header BackgroundFill={"#E0694B"}/>
+      <Presentation BackgroundFill={"#4EDB7D"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#68BD84"}/>
+      <Gallery BackgroundFill={"#68BD84"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#68BD84"} BackgroundFill={"#000000"}/>
       <h1>Ma banque de projets</h1>
-      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
-      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
-      <Gallery />
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#000000"} BackgroundFill={"#ffffff"}/>
       {/* Autres sections */}
       <Timeline data={timelineData} />
-      <Ui_transitionR className={"Left"} BackgroundFill={"#ADADAD"}/>
+      <Ui_transitionR className={""} BackgroundShapeFill={"#ADADAD"} BackgroundFill={"#000000"}/>
+      <Ui_transitionR className={"Left yInvert"} BackgroundShapeFill={"#AffDAD"} BackgroundFill={"#000000"}/>
+      <Ui_transitionR className={""} BackgroundShapeFill={"#AffDAD"} BackgroundFill={"#000000"}/>
+      < a
+        className={"link"}
+        href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing"
+      >
+        Télécharger mon CV
+      </a>
     </div>
   );
 }
