@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "../styles/Presentation.module.scss";
 
-import Ui_transitionR from "../components/Ui_transitionR";
-
 type ColorBackground = {
   BackgroundFill?: string;
 };

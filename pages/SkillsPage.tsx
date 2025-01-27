@@ -15,7 +15,7 @@ const App = () => {
     return (
         <div className={"GlobalPage"}>
             <Header />
-            <h1>Arbre de compétences développé et leur projet (Data viz)</h1>
+            <h1>Arbre de compétences développée et leur projet (Data viz)</h1>
             <ForceGraph data={skillsData} legend={legendData} />
         </div>
     );
