@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createForceGraph } from "../components/skillsMapJS.js";
-import Header from "../components/Header";
 
 
 type Node = {
@@ -66,8 +65,8 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, legend }) => {
 
   return (
     <div>
-      <Header BackgroundFill={"#E0694B"} />
-      <div style={{ top: "85px"}}>
+      <div style={{ top: "45px", position:"relative"}}>
+      <h1>Arbre de compétences développé et leur projet (Data viz)</h1>
         <div className={"skillsDataViz"} ref={containerRef}></div>
         {selectedDetails && (
           <div className="details-panel">

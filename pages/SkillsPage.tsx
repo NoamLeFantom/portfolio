@@ -14,8 +14,7 @@ const legendData = [
 const App = () => {
     return (
         <div className={"GlobalPage"}>
-            <Header />
-            <h1>Arbre de compétences développée et leur projet (Data viz)</h1>
+            <Header BackgroundFill={"#E0694B"}/>
             <ForceGraph data={skillsData} legend={legendData} />
         </div>
     );

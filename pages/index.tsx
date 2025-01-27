@@ -17,16 +17,15 @@ export default function Home() {
       <Ui_transitionR className={"Left"} BackgroundShapeFill={"#E0694B"} BackgroundFill={"#4EDB7D"}/>
       <Header BackgroundFill={"#E0694B"}/>
       <Presentation BackgroundFill={"#4EDB7D"}/>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#68BD84"}/>
-      <Gallery BackgroundFill={"#68BD84"}/>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#68BD84"} BackgroundFill={"#000000"}/>
-      <h1>Ma banque de projets</h1>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#000000"} BackgroundFill={"#ffffff"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#E0694B"}/>
+      <Gallery BackgroundFill={"#E0694B"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#E0694B"} BackgroundFill={"#4EDB7D"}/>
+      <h1 style={{ backgroundColor: "#4EDB7D", color:"#3D312E"}} >Ma banque de projets</h1>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#E0694B"}/>
       {/* Autres sections */}
       <Timeline data={timelineData} />
-      <Ui_transitionR className={""} BackgroundShapeFill={"#ADADAD"} BackgroundFill={"#000000"}/>
-      <Ui_transitionR className={"Left yInvert"} BackgroundShapeFill={"#AffDAD"} BackgroundFill={"#000000"}/>
-      <Ui_transitionR className={""} BackgroundShapeFill={"#AffDAD"} BackgroundFill={"#000000"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#E0694B"}/>
+
       < a
         className={"link"}
         href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing"
