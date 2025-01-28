@@ -6,7 +6,7 @@ type ColorBackground = {
   BackgroundFill?: string;
 };
 
-const Gallery : React.FC<ColorBackground> = ({ BackgroundFill }) => {
+const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [searchTerm, setSearchTerm] = useState<string>(""); // État pour le terme de recherche
@@ -81,14 +81,19 @@ const Gallery : React.FC<ColorBackground> = ({ BackgroundFill }) => {
       {/* Affichage des projets filtrés */}
       <div className={styles.gallery}>
         {filteredProjects.map(([key, project]) => (
-          <div
-            key={key}
-            className={styles.projectCard}
-            onClick={() => handleClick(project)}
-          >
-            <img src={'src'+project.images[0]} alt={project.titre} />
-            <div className={styles.overlay}>
-              <h3>{project.titre}</h3>
+          <div className={styles.projectContainer}>
+            <div className={styles.askToOpen}>
+              <p>Ouvrir ?</p>
+            </div>
+            <div
+              key={key}
+              className={styles.projectCard}
+              onClick={() => handleClick(project)}
+            >
+              <img src={'src' + project.images[0]} alt={project.titre} />
+              <div className={styles.overlay}>
+                <h3>{project.titre}</h3>
+              </div>
             </div>
           </div>
         ))}
@@ -104,7 +109,7 @@ const Gallery : React.FC<ColorBackground> = ({ BackgroundFill }) => {
             <h3>{selectedProject.titre}</h3>
             <div className={styles.popupBody}>
               <img
-                src={'src'+selectedProject.images[currentImageIndex]}
+                src={'src' + selectedProject.images[currentImageIndex]}
                 alt={selectedProject.titre}
                 className={
                   selectedProject.images[currentImageIndex].includes(".jpg")

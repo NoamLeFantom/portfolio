@@ -13,11 +13,33 @@
     }
 }
 
-.galleryContainer
-{
-    color:#3D312E;
+.galleryContainer {
+    color: #3D312E;
 }
+.projectContainer
+{
+    --a:110px;
 
+    .askToOpen {
+        position: relative;
+        top: var(--a);
+    
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    
+        background: rgba(0, 0, 0, 0.5);
+        color: rgb(255, 255, 255);
+        
+        text-align: center;
+        padding: 0px;
+        z-index: 0;
+        transition: top 0.3s ease;
+    }
+    &:hover
+    {
+        --a:20px;
+    }
+}
 .projectCard {
     position: relative;
     cursor: pointer;
@@ -47,8 +69,12 @@
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 10px;
-        opacity: 0;
+        opacity: 1;
         transition: opacity 0.3s ease;
+
+        @media screen and (min-width: 445px) {
+            opacity: 1;
+        }
 
         h3 {
             font-size: 18px;
@@ -58,6 +84,7 @@
     &:hover .overlay {
         opacity: 1;
     }
+
 }
 
 .popup {

@@ -31,8 +31,7 @@ export default function Home() {
       <p style={{ marginTop: "0px", backgroundColor: "#EA5930", color: "#00000" }}>
         <a
           className={"link"}
-          href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing"
-        >
+          href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing" >
           Télécharger mon CV
         </a>
       </p>

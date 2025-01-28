@@ -1,0 +1,15 @@
+.transition_ui {
+  background: #d7d7d7;
+  width: 100%;
+  margin: 0px;
+}
+.transition_ui svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  .transition_ui {
+    grid-column: 1/3;
+  }
+}/*# sourceMappingURL=Ui_transitionR.module.css.map */
