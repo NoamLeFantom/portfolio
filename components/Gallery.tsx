@@ -66,8 +66,7 @@ const Gallery : React.FC<ColorBackground> = ({ BackgroundFill }) => {
 
   return (
     <div className={styles.galleryContainer} style={{ background: `${BackgroundFill}` }}>
-      <h1>Ma banque de projets</h1>
-      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
+      <p style={{ marginTop: "0px", paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
       <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
       {/* Barre de recherche */}
       <div id='Projects' className={styles.searchBar}>

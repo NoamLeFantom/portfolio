@@ -14,24 +14,28 @@ export default function Home() {
   }, []); // Le titre sera défini quand le composant est monté
   return (
     <div className={'GlobalPage'}>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#E0694B"} BackgroundFill={"#4EDB7D"}/>
-      <Header BackgroundFill={"#E0694B"}/>
-      <Presentation BackgroundFill={"#4EDB7D"}/>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#E0694B"}/>
-      <Gallery BackgroundFill={"#E0694B"}/>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#E0694B"} BackgroundFill={"#4EDB7D"}/>
-      <h1 style={{ backgroundColor: "#4EDB7D", color:"#3D312E"}} >Ma banque de projets</h1>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#E0694B"}/>
-      {/* Autres sections */}
-      <Timeline data={timelineData} />
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#4EDB7D"} BackgroundFill={"#E0694B"}/>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
+      <Header BackgroundFill={"#EA5930"} />
+      <Presentation BackgroundFill={"#EFEFEF"} />
+      <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+      <h1 style={{ backgroundColor: "#66271F", color: "#EFEFEF" }} >Ma banque de projets</h1>
+      <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
 
-      < a
-        className={"link"}
-        href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing"
-      >
-        Télécharger mon CV
-      </a>
+      <Gallery BackgroundFill={"#EFEFEF"} />
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+      <h1 style={{ backgroundColor: "#66271F", color: "#EFEFEF" }} >Un petit résumé sur moi ?</h1>
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
+      {/* Autres sections */}
+      <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
+      <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
+      <p style={{ marginTop: "0px", backgroundColor: "#EA5930", color: "#00000" }}>
+        <a
+          className={"link"}
+          href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing"
+        >
+          Télécharger mon CV
+        </a>
+      </p>
     </div>
   );
 }

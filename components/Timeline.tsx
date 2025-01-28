@@ -13,13 +13,14 @@ import styles from "../styles/Timeline.module.scss";
 
 type TimelineProps = {
   data: TimelineData; // TimelineData correspond au type que nous avons défini précédemment
+  BackgroundFill?: string;
 };
 
-const Timeline: React.FC<TimelineProps> = ({ data }) => {
+const Timeline: React.FC<TimelineProps> = ({ data, BackgroundFill }) => {
   const years = Object.keys(data).sort((a, b) => Number(b) - Number(a));
 
   return (
-    <div className={styles.timeline}>
+    <div className={styles.timeline} style={{ backgroundColor: `${BackgroundFill}`}}>
       <div>
         {years.map((year) => (
           <div key={year} className={styles.timeline_year}>
