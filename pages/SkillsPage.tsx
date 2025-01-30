@@ -30,7 +30,7 @@ const SkillsPage = () => {
 
   return (
     <div className={"GlobalPage"}>
-      <Header BackgroundFill={"#E0694B"} />
+      <Header BackgroundFill={"#EA5930"} />
       {resourceDetails && (
         <ForceGraph
           data={skillsData}

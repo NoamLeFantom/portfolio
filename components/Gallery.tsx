@@ -81,15 +81,11 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       {/* Affichage des projets filtrés */}
       <div className={styles.gallery}>
         {filteredProjects.map(([key, project]) => (
-          <div className={styles.projectContainer}>
+          <div key={key} className={styles.projectContainer}>
             <div className={styles.askToOpen}>
-              <p>Ouvrir ?</p>
+              <p>Voir les détails</p>
             </div>
-            <div
-              key={key}
-              className={styles.projectCard}
-              onClick={() => handleClick(project)}
-            >
+            <div className={styles.projectCard} onClick={() => handleClick(project)}>
               <img src={'src' + project.images[0]} alt={project.titre} />
               <div className={styles.overlay}>
                 <h3>{project.titre}</h3>
