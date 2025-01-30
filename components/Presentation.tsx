@@ -8,11 +8,11 @@ type ColorBackground = {
 const Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
 
   return (
-    <div className={styles.acceuilTxt} style={{ background: `${BackgroundFill}` }} >
+    <section className={styles.acceuilTxt} style={{ background: `${BackgroundFill}` }} >
       <h1>Noam LE GARSMEUR </h1>
       < img
         className={styles.photoDeProfil}
-        src="src/uploads/2e744a0a79e756af189f47a2d01b7ac5.png"
+        src="/src/ui/Noam_Image.png"
         alt="Contenue, photo de moi"
       />
       <div className={styles.text}>
@@ -25,7 +25,7 @@ const Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           Mon sens du travail en autonomie combiné à ma capacité à travailler en équipe me permettent de me rendre très flexible selon les situations.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
