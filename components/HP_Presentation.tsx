@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "../styles/Presentation.module.scss";
+import styles from "../styles/HP_Presentation.module.scss";
 
 type ColorBackground = {
   BackgroundFill?: string;
 };
 
-const Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
+const HP_Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
 
   return (
-    <section className={styles.acceuilTxt} style={{ background: `${BackgroundFill}` }} >
+    <section className={styles.HP_Pres_container} style={{ background: `${BackgroundFill}` }} >
       <h1>Noam LE GARSMEUR </h1>
       < img
         className={styles.photoDeProfil}
@@ -29,4 +29,4 @@ const Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
   );
 };
 
-export default Presentation;
+export default HP_Presentation;
