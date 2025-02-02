@@ -25,39 +25,17 @@
 
     .text {
         grid-column: 1/3;
-        p
-        {
+
+        p {
             text-align: left;
             font-size: 1rem;
         }
     }
 
-    .dl_button {
-        align-self: center;
-        grid-column: 1/3;
-    }
-
     @media screen and (min-width: 740px) {
-
-        h1 {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            text-align: left;
-        }
 
         .HP_mediaContent {
             height: 420px;
-        }
-
-        .intro {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            font-size: 1.2rem;
-        }
-
-        .dl_button {
-            grid-column: 2/3;
-            grid-row: 3/4;
         }
     }
 
@@ -66,21 +44,13 @@
         grid-template-rows: auto auto;
         grid-template-columns: 50% 50%;
         gap: 20px;
-
-        .HP_mediaContent {
-            grid-column: 1/2;
-            grid-row: 2/4;
-            max-height: 100%;
-            height: 220px;
-        }
-
-        .text {
-            grid-column: 2/3;
-            grid-row: 2/4;
-        }
     }
 
     @media screen and (min-width: 1400px) {
+        .HP_mediaContent {
+            height: 420px;
+        }
+
         .intro {
             grid-column: 2/3;
             grid-row: 2/3;
@@ -94,6 +64,11 @@
     }
 
     @media screen and (min-width: 1800px) {
+        .HP_mediaContent {
+            height: 400px;
+            width: 800px;
+        }
+
         .intro {
             font-size: 2rem;
             margin-left: 0rem;
@@ -103,6 +78,48 @@
             grid-column: 2/3;
             grid-row: 3/4;
             font-size: 2rem;
+        }
+    }
+}
+
+.PresProj_Left {
+    @media screen and (min-width: 1024px) {
+        h1 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            text-align: left;
+        }
+
+        .HP_mediaContent {
+            grid-column: 2/3;
+            grid-row: 2/4;
+            max-height: 100%;
+        }
+
+        .text {
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+    }
+}
+
+.PresProj_Right {
+    @media screen and (min-width: 1024px) {
+        h1 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            text-align: left;
+        }
+
+        .HP_mediaContent {
+            grid-column: 1/2;
+            grid-row: 2/4;
+            max-height: 100%;
+        }
+
+        .text {
+            grid-column: 2/3;
+            grid-row: 2/4;
         }
     }
 }

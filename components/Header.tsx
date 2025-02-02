@@ -69,6 +69,7 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           <li className={styles.link}><a href="SkillsPage">Cartographie de Compétences</a></li>
         </nav>
       </nav>
+      <div style={{background:"red",color:"white", padding:"10px"}}>En cours de développement</div>
     </header>
   );
 };
