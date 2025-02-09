@@ -3,11 +3,9 @@
     position: relative;
     text-align: center;
     cursor: pointer;
-    padding: 20px;
 
     a {
         color: #EFEFEF;
-        padding: 0px;
     }
 
     &:after {
@@ -22,6 +20,7 @@
         transform: scaleX(0);
         color: azure;
         transition: transform 0.3s ease;
+        top: 10px;
         transform-origin: left;
     }
 

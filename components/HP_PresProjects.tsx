@@ -22,19 +22,38 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           </p>
         </div>
       </section>
-      <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Left}`} style={{ background: `${BackgroundFill}` }} >
+      <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
         <h1>Motion animation</h1>
         <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/CMFnycLH24U?si=7AbiyFPG7BvSTme7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
         <div className={styles.text}>
           <p>
-          Dans le cadre de mon alternance chez Cooperl, au sein de la DSI, j’ai réalisé un grand nombre de vidéos agrémentées de transitions spécifiques et sur mesure, ainsi que d’introductions et d’endings.<br/>
+            Dans le cadre de mon alternance chez Cooperl, au sein de la DSI, j’ai réalisé un grand nombre de vidéos agrémentées de transitions spécifiques et sur mesure, ainsi que d’introductions et d’endings.<br />
 
-J’ai expérimenté et développé mes compétences dans ce domaine, que je connaissais peu ou pas du tout. L’objectif était de professionnaliser les rendus et de sortir des formats classiques que l’on voit quotidiennement sur les réseaux sociaux.<br/>
+            J’ai expérimenté et développé mes compétences dans ce domaine, que je connaissais peu ou pas du tout. L’objectif était de professionnaliser les rendus et de sortir des formats classiques que l’on voit quotidiennement sur les réseaux sociaux.<br />
 
-J’ai également appris à maîtriser l’outil PlayPlay en combinaison avec DaVinci Resolve. Cette association d’outils constitue un véritable atout pour la production de vidéos en série.
+            J’ai également appris à maîtriser l’outil PlayPlay en combinaison avec DaVinci Resolve. Cette association d’outils constitue un véritable atout pour la production de vidéos en série.
           </p>
         </div>
       </section>
+      <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
+        <h1>Cadreur / Monteur TedX Lannion 2025</h1>
+        <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/CMFnycLH24U?si=7AbiyFPG7BvSTme7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+        <div className={styles.text}>
+          <p>
+            Le 7 février 2025 se tenait un événement TedX à Lannion, au Carré Magique. Cela a été une captation de 2h30 durant laquelle j'ai pu capturer les coulisses du spectacle.<br />
+            J'ai néanmoins pris part aux deux jours de préparation précédant la représentation. Nous avons préparé les différentes caméras et mis en place un dispositif complet afin de transmettre également l'événement en coulisse et aidé les différentes équipes selon les besoins.<br />
+            Être force de proposition et de conseils a été un grand plus dans la préparation de cet événement.<br />
+
+            En amont du spectacle, nous avons commencé à préparer cette captation dès novembre 2024, en recherchant des bénévoles, des partenaires et du matériel.<br />
+
+            En aval de la captation, j'ai également participé aux montages vidéo des différents talks et de l'after movie.
+
+          </p>
+        </div>
+      </section>
+      <section className={`${styles.HP_PresProjects_container}`}><p>Voir plus de projet selon le domaine que vous recherchez ?</p>
+      <a href="/GalerieP">Galerie</a></section>
+      
     </div>
   );
 };

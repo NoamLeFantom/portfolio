@@ -3,15 +3,20 @@ import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 import Ui_transitionR from "../components/Ui_transitionR";
 
-const SkillsPage = () => {
+
+type ColorBackground = {
+  BackgroundFill?: string;
+};
+
+const GalerieP: React.FC<ColorBackground> = ({ BackgroundFill }) => {
 
   return (
-    <div className={"GlobalPage"}>
+    <section style={{ background: `${BackgroundFill}`}} >
       <Header BackgroundFill={"#EA5930"} />
       <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
       <Gallery BackgroundFill={"#efefef"} />
-    </div>
+    </section>
   );
 };
 
-export default SkillsPage;
+export default GalerieP ;
