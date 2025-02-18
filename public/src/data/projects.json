@@ -1,11 +1,11 @@
 {
   "projet2": {
     "titre": "Eiffel tower _",
-    "description": "I released this Eiffel Tower to test my knowledge and my determination.",
+    "description": "Pour un projet de modding sur Arma 3, j'ai réalisé cette Tour Eiffel. Je l'ai modélisé et texturé entièrement sur blender.\nJ'ai également réalisé une version convex de ce modèle. Les animations ont été réalisées sur la base du moteur Arma 3 à base de mémory et de config.",
     "details": [
       "3d",
-      "blender",
-      "modelling"
+      "Blender",
+      "Modelling"
     ],
     "images": [
       "/uploads/Eiffel tower __1.png"
@@ -13,14 +13,14 @@
   },
   "projet3": {
     "titre": "Cabourg city hall",
-    "description": "A model project for MetaverseGT.All process of creation was released on blender except foliage.",
+    "description": "Un projet de partenaire pour MetaverseGT avec la maison du cinéma et la ville de Cabourg. Tout le processus de création a été réalisé sur blender à l'exception du feuillage réalisé en collaboration avec Jomsims (voir \"The Sims Ressource\").",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing",
-      "baking"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
+      "Baking"
     ],
     "images": [
       "/uploads/Cabourg city hall_1.png"
@@ -28,14 +28,14 @@
   },
   "projet4": {
     "titre": "3D-2D alley draw",
-    "description": "For a challenge, I decide to represent an alley in atypical style for 3D creation.This style is in draw representation.",
+    "description": "Lors d'un challenge 3D dont le thème était \"Ruelle\" réalisé sur le serveur discord de Charley3D, j'ai réalisé cet environnement dans un style atypique que je ne connaissais pas très bien.\nCe projet a été exclusivement réalisé sur Blender.",
     "details": [
       "2d",
       "3d",
-      "blender",
-      "draw",
-      "lightning",
-      "modelling"
+      "Blender",
+      "Draw",
+      "Lightning",
+      "Modelling"
     ],
     "images": [
       "/uploads/3D-2D alley draw_1.png"
@@ -43,10 +43,11 @@
   },
   "projet5": {
     "titre": "Go to the depth of the ocean",
-    "description": "I don't know why, but I have looked to the sky, and I see the deeper of ocean.I decide to recreate this see with fauna and flora and a diver going deeper.",
+    "description": "Ce projet a une connotation que je trouve assez poétique... Je ne sais pas pourquoi, mais j'ai regardé le ciel et j'ai vu les profondeurs de l'océan. J'ai décidé de recréer cette mer avec la faune et la flore et un plongeur qui s'enfonce dans les profondeurs.",
     "details": [
       "3d",
-      "blender"
+      "Blender",
+      "Lightning"
     ],
     "images": [
       "/uploads/Go to the depth of the ocean_1.png"
@@ -54,13 +55,13 @@
   },
   "projet6": {
     "titre": "Realistic 3D Sunset",
-    "description": "Inspired by a picture of sunset, I realized a scene with concrete and rock way.A realy hot sun be front of us and dazzle us.",
+    "description": "Un projet initialement inspiré par une simple balade à la plage. J'ai reproduit une photo de coucher de soleil prise à cette occasion. Cette réalisation est une scène avec un chemin de béton et de rochers, un soleil très chaud devant nous qui nous éblouit et la mer autour.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing"
     ],
     "images": [
       "/uploads/Realistic 3D Sunset_1.png"
@@ -68,37 +69,44 @@
   },
   "projet7": {
     "titre": "Veronoi picture Geonodes",
-    "description": "I used Geometry nodes of blender to creating veronoi modification.I can modify aspect of any image, the density (resolution) and the shape of veronoi effect.",
+    "description": "Pour ce projet, j'ai utilisé les geometry nodes de Blender pour créer des modifications de paint effect à base de véronoï. Une image d'entrée suffit pour ensuite pouvoir modifier la densité et l'effet de véronoï souhaité.",
     "details": [
       "2d",
       "3d",
-      "blender",
-      "photography"
+      "Blender",
+      "Photography"
     ],
     "images": [
-      "/uploads/Veronoi picture Geonodes_1.png"
+      "/uploads/f54dc97bfedf1698736562f43bff1618.png",
+      "/uploads/72af5556c5ee59d36dab26573b4853c9.png",
+      "/uploads/d982a760669f5a6eb44d21330c479f2d.png",
+      "/uploads/d45da0ddaeb4532876156f675b72af5b.png",
+      "/uploads/5314715131074c18ab65c55363b2eb0b.png",
+      "/uploads/8ab95fac3bf71704dcb97cdebee77567.png",
+      "/uploads/edfb863521ac17b209e9d38cabdfe07a.png"
     ]
   },
   "projet8": {
     "titre": "Veronoi picture",
-    "description": "I used Substance Designer for creating veronoi modification and modified other parameter of image.",
+    "description": "Pour ce projet personnel, j'ai utilisé Substance Designer afin de m'essayer au logiciel. J'ai donc procédé à des modifications de veronoi sur les différents contrastes.\nCe logiciel à l'air puissant, mais assez complexe à prendre en main.",
     "details": [
-      "photography"
+      "Photography",
+      "SubstanceDesigner"
     ],
     "images": [
       "/uploads/Veronoi picture_1.png",
-      "/uploads/4a2564a4bc6da7b43a4f5fef09947cc7"
+      "/uploads/4a2564a4bc6da7b43a4f5fef09947cc7.png"
     ]
   },
   "projet9": {
     "titre": "Forge Conquest Tower",
-    "description": "A student project made with students of Gaming Campus.\nLot of items was realesed by me and I have teached for many production during this period.\nI'm modeling and unwrapped it on blender, and texturing with Substance Painter.",
+    "description": "Lors de ce projet étudiant réalisé avec des étudiants du Gaming Campus, j'ai eu l'opportunité de réaliser beaucoup d'éléments 3D et ai pu partager de nombreuses connaissances durant cette période.\nJ'ai majoritairement utilisé Blender pour la modélisation et l'unwrap. Concernant les textures je les ai réalisé avec SubstancePainter.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing",
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
       "substancepainter"
     ],
     "images": [
@@ -107,13 +115,13 @@
   },
   "projet10": {
     "titre": "Daily Challenge Crabe",
-    "description": "I'have created a scene on the theme was crab.I have modeled all the scene and created a specific shader for volumetric effect.The time I have take was 8 hours.",
+    "description": "Dans l'objectif d'un défi d'une modélisation par jour, j'ai créé une petite scène sur le thème du crabe. J'ai donc modélisé ce dernier dans un environnement très simple.\nJ'ai souhaité jouer avec un effet de caustique avec un shader volumétrique spécifique.Le temps de trouver l'idée et de réaliser cette scène, cela m'a pris environs 8 heures.",
     "details": [
       "3d",
-      "blender",
+      "Blender",
       "shading",
-      "lightning",
-      "modelling"
+      "Lightning",
+      "Modelling"
     ],
     "images": [
       "/uploads/Daily Challenge Crabe_1.png"
@@ -121,13 +129,13 @@
   },
   "projet11": {
     "titre": "Diorama",
-    "description": "This is a screen of a video diorama made during a school project in 3D.",
+    "description": "Il s'agit d'une capture d'écran d'un diorama vidéo réalisé dans le cadre d'un projet scolaire en 3D.\nLa partie la plus complexe était de modéliser chaque élément puis de les texturer.\nJ'ai essayé de rendre un maximum vivant cette scène composés de beaucoup d'objet.\nJ'ai beaucoup appris, notamment sur la composition et gestion de mes lumières.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing"
     ],
     "images": [
       "/uploads/Diorama_1.png"
@@ -135,65 +143,81 @@
   },
   "projet12": {
     "titre": "Datalogy size type of way in Cotes d'Armor",
-    "description": "A project in which I wanted to represent all types of paths in the CÃ´tes d'Armor in France.This is a photograph of wool taking the form of different types of practices with the proportional size. I played with different orientations of lights to accentuate the colors.",
+    "description": "Un projet dans lequel j'ai voulu représenter tous les types de chemins dans les Côtes-d'Armor en France. Il s'agit d'une photographie de laine prenant la forme de différents types de pratiques à la taille proportionnelle. J'ai joué avec différentes orientations de lumières pour accentuer les couleurs.",
     "details": [
-      "photography"
+      "Photography"
     ],
     "images": [
       "/uploads/Datalogy size type of way in Cotes d'Armor_1.png",
-      "/uploads/92d73622572ae67b69698eb3c5eeb433",
-      "/uploads/54397f2b472174ae9579876caaed83f6"
+      "/uploads/92d73622572ae67b69698eb3c5eeb433.png",
+      "/uploads/54397f2b472174ae9579876caaed83f6.png"
     ]
   },
   "projet13": {
     "titre": "Infographic Nautile Ifremer",
-    "description": "An infographic realesed on Nautile, scientifique submarine of IFREMER at Brest.\n\nI have created the 3D model of Nautile for have lot of control on the render, on the effect and many things.",
+    "description": "Dans le cadre de la réalisation d’une infographie sur le thème des sous-marins de l’Ifremer, nous devions choisir un engin parmi l’ensemble de leur flotte.\nJ’ai donc choisi de réaliser mon infographie sur le Nautile, le seul sous-marin habitable de l’Ifremer.\nJ’ai opté pour une conception en 3D afin de mettre à l’épreuve mes compétences, notamment en modélisation et en rendu.\nCe projet m’a également permis d’explorer des notions clés en conception d’infographie, telles que l’agencement des différents éléments.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing",
-      "compositing"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
+      "Compositing"
     ],
     "images": [
       "/uploads/52f7b214017d994ff24305f30bf042fd.png",
       "/uploads/13c88e14a5f9c3810903b33d690121fa.png",
       "/uploads/2e744a0a79e756af189f47a2d01b7ac5.png",
-      "/uploads/b9fc4f05c6434fc000154179b69b9781.png",
       "/uploads/7388ab88c74be9d2b821ea5530bdfd03.png",
-      "/uploads/9318fc4971569af1e0dc2e8081390b08.png"
+      "/uploads/9318fc4971569af1e0dc2e8081390b08.png",
+      "/uploads/Nautile.gif"
     ]
   },
   "projet14": {
-    "titre": "Onfido",
-    "description": "Réalisation d'un projet de design d'expérience sur le théme des wallet ID blabla",
+    "titre": "FX Davinci Resolve",
+    "description": "Lors de mon alternance, j'ai travaillé sur un certain nombre de transitions et d'animations de texte en utilisant le système de Compositing nodal fusion, j'ai voulu les rendre paramétrables afin de pouvoir les réutiliser sans avoir à modifier le système nodal. Le plus compliqué a été d'organiser les panneaux de contrôle, car il est nécessaire d'entrer dans le fichier généré avec un éditeur de texte. Le code de base est un congénère de lua.",
     "details": [
-      "figma",
-      "DavinciResolve",
-      "Blender"
+      "video",
+      "2d",
+      "Lua",
+      "DavinciResolve"
     ],
     "images": [
-      "/uploads/0f8d1831ed728cbfbd74fedc20052ebb",
-      "/uploads/ef6cb85b86f9c25415d84e8a7a6c75fe",
-      "/uploads/195ef9ed868998996bd98ae9f894fd28",
-      "/uploads/3f724bbaa19e6473a7233eaca82d669a",
-      "/uploads/c236b553464b31867df727735dfb3a3b",
-      "/uploads/adb82b2d1fdaa58d6c6d0cb762fb8cb6"
-
+      "/uploads/MotionLVEL.gif",
+      "/uploads/Motion.png",
+      "/uploads/Motion2.png"
     ]
   },
   "projet15": {
-    "titre": "FX Davinci Resolve",
-    "description": "During my work-study program, I worked on a number of transitions and text animations using the nodal fusion compositing system, I wanted to make them parameterizable so that I could reuse them without having to modify the nodal system. The most complicated part was organizing the control panels, since it is necessary to enter the generated file with a text editor. The basic code is a congener of lua.",
+    "titre": "Cadreur / Monteur TedX Lannion 2025",
+    "description": "Le 7 février 2025 se tenait un événement TedX à Lannion, au Carré Magique. Cela a été une captation de 2h30 durant laquelle j'ai pu capturer les coulisses du spectacle. J'ai néanmoins pris part aux deux jours de préparation précédant la représentation. Nous avons préparé les différentes caméras et mis en place un dispositif complet afin de transmettre également l'événement en coulisse et aidé les différentes équipes selon les besoins. Être force de proposition et de conseils a été un grand plus dans la préparation de cet événement. En amont du spectacle, nous avons commencé à préparer cette captation dès novembre 2024, en recherchant des bénévoles, des partenaires et du matériel. En aval de la captation, j'ai également participé aux montages vidéo des différents talks et de l'after movie.",
     "details": [
-      "video",
-      "DavinciResolve",
-      "2d",
-      "lua"
+      "Video",
+      "DavinciResolve"
     ],
     "images": [
-      "/uploads/FX Davinci Resolve.png"
+      "/uploads/4e2b76a695c7abc4bc38ca32b6d64176.png",
+      "/uploads/1ae3eb9919b3b8b1d1df163d49c5a4f4.png"
+    ]
+  },
+  "projet16": {
+    "titre": "Carte de luminosoté sur un film",
+    "description": "Un soir, je me suis demandé ce qu'il se passerait si l'on venait à cumuler les images d'un film. J'ai commencé par essayer de séparer et d'extraire les composantes RGB de chaque frame et de cumuler ces dernières en des cartes noires et blanches. En assemblant ces différentes cartes, j'ai trouvé un résultat très intéressant répondant à ma question. Quel pixel affiche quelle couleur en majorité sur le film ?",
+    "details": [
+      "Video",
+      "DavinciResolve"
+    ],
+    "images": [
+      "/uploads/t1_LaHautCombined.jpg",
+      "/uploads/t2_LaHautRed.jpg",
+      "/uploads/t3_LaHautGreen.jpg",
+      "/uploads/t4_LaHautBlue.jpg",
+      "/uploads/t5_The_Hunger_Games_(2012)Combined.jpg",
+      "/uploads/t6_The_Hunger_Games_(2013)Combined.jpg",
+      "/uploads/t7_The_Hunger_Games_(2014)Combined.jpg",
+      "/uploads/t8_The_Hunger_Games_(2015)Combined.jpg",
+      "/uploads/t45_GhostInTheShellCombined.jpg"
+
     ]
   }
 }

@@ -18,7 +18,7 @@
 
   ],
   "2025": [
-    { "date": "2025-01-01", "titre": "Nos futures sont peut être lié !?", "duree":"", "description": "..."}
-
+    { "date": "...", "titre": "Nos futures sont peut être lié !?", "duree":"", "description": "..."},
+    { "date": "2025-02-06", "titre": "Cadreur / Monteur TedX Lannion 2025", "duree":"", "description": "Captation de l'évenement et montage des talks àl'occasion du TedX Lannion 2025 au Carré Magique"}
   ]
 }
