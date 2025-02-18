@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/HP_PresProjects.module.scss";
-import NautileVideo from "../public/src/uploads/Nautile.mp4";
 
 type ColorBackground = {
   BackgroundFill?: string;
@@ -12,9 +11,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     <div style={{ background: `${BackgroundFill}` }}>
       <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
         <h1>Infographie Ifremer Nautile</h1>
-        <video className={styles.HP_mediaContent} controls>
-          <source src = {NautileVideo} type="video/mp4"/>
-        </video>
+        <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/FYzzeZrmXmg?si=tlmNh9HCPrI2UWXL" title="Nautile presentation"></iframe>
         
         
         <div className={styles.text}>
@@ -29,7 +26,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       </section>
       <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
         <h1>Motion animation</h1>
-        <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/CMFnycLH24U?si=7AbiyFPG7BvSTme7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+        <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/PB_a2CoFVcY?si=eputsSW0DSrAi18d" title="Motion animation"></iframe>
         <div className={styles.text}>
           <p>
             Dans le cadre de mon alternance chez Cooperl, au sein de la DSI, j’ai réalisé un grand nombre de vidéos agrémentées de transitions spécifiques et sur mesure, ainsi que d’introductions et d’endings.<br /><br />
@@ -42,7 +39,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       </section>
       <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
         <h1>Cadreur / Monteur TedX Lannion 2025</h1>
-        <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/CMFnycLH24U?si=7AbiyFPG7BvSTme7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+        <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/_Cj7S7ElV2U?si=l3DO2ApEyVIpWIXn" title="TedX vidéo"></iframe>
         <div className={styles.text}>
           <p>
             Le 7 février 2025 se tenait un événement TedX à Lannion, au Carré Magique. Cela a été une captation de 2h30 durant laquelle j'ai pu capturer les coulisses du spectacle.<br />
