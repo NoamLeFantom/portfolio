@@ -11,41 +11,27 @@ import { Analytics } from '@vercel/analytics/next';
 export default function Home() {
   useEffect(() => {
     document.title = "noamlg-portfolio";
+    document.documentElement.lang = "fr";
   }, []); // Le titre sera défini quand le composant est monté
   return (
-    <html lang="fr">
-      <head>
-
-      </head>
-      <body>
-        <div className={'GlobalPage'}>
-          <Analytics />
-          <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
-          <Header BackgroundFill={"#EA5930"} />
-          <main>
-            <HP_Presentation BackgroundFill={"#EFEFEF"} />
-            <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
-            <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF" }} >Voir quelques projets</h1>
-            <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
-            <HP_PresProjects BackgroundFill={"#EFEFEF"} />
-
-            <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
-            <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF" }} >Un petit résumé sur moi ?</h1>
-            <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
-            {/* Autres sections */}
-            <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
-            <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
-            <p style={{ marginTop: "0px", backgroundColor: "#EA5930", color: "#00000" }}>
-              <a
-                className={"link"}
-                href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing" >
-                Télécharger mon CV
-              </a>
-            </p>
-
-          </main>
-        </div>
-      </body>
-    </html>
+    <div className={'GlobalPage'}>
+      <Analytics />
+      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
+      <Header BackgroundFill={"#EA5930"} />
+      <main>
+        <HP_Presentation BackgroundFill={"#EFEFEF"} />
+        <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+        <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Voir quelques projets</h1>
+        <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
+        <HP_PresProjects BackgroundFill={"#EFEFEF"} />
+        
+        <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+        <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Un petit résumé sur moi ?</h1>
+        <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
+        {/* Autres sections */}
+        <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
+        <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
+      </main>
+    </div>
   );
 }

@@ -25,6 +25,10 @@ const HP_Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           Mon sens du travail en autonomie combiné à ma capacité à travailler en équipe me permettent de me rendre très flexible selon les situations.
         </p>
       </div>
+      <a style={{color:`white` ,textAlign: `center`, backgroundColor:`#66271F`}}
+            href="https://drive.google.com/file/d/1Ae4sLgKBmPtNJ3iuPzbwPkCzTE0JMFn8/view?usp=drive_link" >
+            Télécharger mon CV
+          </a>
     </section>
   );
 };

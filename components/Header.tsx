@@ -62,8 +62,8 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         </button>
         <nav className={classNames(styles.menu, { [styles.menuOpen]: isOpen })} style={{ background: BackgroundFill }}>
           <li className={styles.link}><a href="/">Accueil</a></li>
-          <li className={styles.link}><a href="/GalerieP">Galerie</a></li>
-          <li className={styles.link}><a href="#">Contact</a></li>
+          <li className={styles.link}><a href="/GaleriePage">Galerie</a></li>
+          <li className={styles.link}><a href="/ContactPage">Contact</a></li>
           <li className={styles.link}><a href="SkillsPage">Cartographie de Compétences</a></li>
         </nav>
       </nav>
