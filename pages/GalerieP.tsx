@@ -9,6 +9,9 @@ type ColorBackground = {
 };
 
 const GalerieP: React.FC<ColorBackground> = ({ BackgroundFill }) => {
+  useEffect(() => {
+    document.title = "noamlg-Gallerie";
+  }, []); // Le titre sera défini quand le composant est monté
 
   return (
     <section style={{ background: `${BackgroundFill}`}} >

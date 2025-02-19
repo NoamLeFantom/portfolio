@@ -5,40 +5,47 @@ import Header from "../components/Header";
 import HP_Presentation from "../components/HP_Presentation";
 import HP_PresProjects from "../components/HP_PresProjects";
 import Ui_transitionR from "../components/Ui_transitionR";
-
 import { useEffect } from "react";
-import Link from "next/link";
+import { Analytics } from '@vercel/analytics/next';
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Noam_lg";
+    document.title = "noamlg-portfolio";
   }, []); // Le titre sera défini quand le composant est monté
   return (
-    <div className={'GlobalPage'}>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
-      <Header BackgroundFill={"#EA5930"} />
-      <main>
-        <HP_Presentation BackgroundFill={"#EFEFEF"} />
-        <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
-        <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Voir quelques projets</h1>
-        <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
-        <HP_PresProjects BackgroundFill={"#EFEFEF"} />
-        
-        <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
-        <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Un petit résumé sur moi ?</h1>
-        <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
-        {/* Autres sections */}
-        <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
-        <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
-        <p style={{ marginTop: "0px", backgroundColor: "#EA5930", color: "#00000" }}>
-          <a
-            className={"link"}
-            href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing" >
-            Télécharger mon CV
-          </a>
-        </p>
-        
-      </main>
-    </div>
+    <html lang="fr">
+      <head>
+
+      </head>
+      <body>
+        <div className={'GlobalPage'}>
+          <Analytics />
+          <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
+          <Header BackgroundFill={"#EA5930"} />
+          <main>
+            <HP_Presentation BackgroundFill={"#EFEFEF"} />
+            <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+            <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF" }} >Voir quelques projets</h1>
+            <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
+            <HP_PresProjects BackgroundFill={"#EFEFEF"} />
+
+            <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+            <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF" }} >Un petit résumé sur moi ?</h1>
+            <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
+            {/* Autres sections */}
+            <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
+            <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
+            <p style={{ marginTop: "0px", backgroundColor: "#EA5930", color: "#00000" }}>
+              <a
+                className={"link"}
+                href="https://drive.google.com/file/d/1jB4BNyQF-mywceCbGjFejJC7sNXyluCb/view?usp=sharing" >
+                Télécharger mon CV
+              </a>
+            </p>
+
+          </main>
+        </div>
+      </body>
+    </html>
   );
 }
