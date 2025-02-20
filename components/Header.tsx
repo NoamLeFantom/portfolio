@@ -40,7 +40,7 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     >
       <nav className={styles.container}>
         <a href="/">
-          <img src="/ui/Fantom.png" alt="Logo du site" className={styles.logo} />
+          <img src="/src/ui/logo.png" alt="Logo du site" className={styles.logo} />
         </a>
         <button className={styles.hamburger} onClick={toggleMenu} aria-label="Menu">
           {isOpen ? (
@@ -67,7 +67,6 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           <li className={styles.link}><a href="SkillsPage">Cartographie de Compétences</a></li>
         </nav>
       </nav>
-      <div style={{background:"red",color:"white", padding:"10px"}}>En cours de développement</div>
     </header>
   );
 };

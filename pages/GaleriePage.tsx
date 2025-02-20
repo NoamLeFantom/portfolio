@@ -20,6 +20,7 @@ const GalerieP: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
         <Gallery BackgroundFill={"#efefef"} />
       </main>
+      <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
     </section>
   );
 };

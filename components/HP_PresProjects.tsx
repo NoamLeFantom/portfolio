@@ -54,8 +54,9 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
             </p>
           </div>
         </section>
-        <section className={`${styles.HP_PresProjects_container}`} style={{ alignItems: `center` }}><p style={{ textAlign: `center` }}>Voir plus de projet selon le domaine que vous recherchez ?</p>
-          <a style={{ color: `white`, textAlign: `center`, backgroundColor: `#66271F` }} href="/GaleriePage">Galerie</a></section>
+        <section className={`${styles.HP_PresProjects_container} ${styles.text}`} style={{ alignItems: `center` }}><p style={{ textAlign: `center` }}>Voir plus de projet selon le domaine que vous recherchez ?</p>
+          <div className={`${styles.link}`}><a href="/GaleriePage">Voir la galerie</a></div>
+          </section>
 
       </div>
     </div>

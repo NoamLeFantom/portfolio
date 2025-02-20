@@ -67,7 +67,7 @@ const ForceGraph: React.FC<ForceGraphProps> = ({ data, legend }) => {
 
   return (
     <div>
-      <div style={{ top: "45px", position: "relative", display:"flex", flexDirection:"column", alignItems:"center" }}>
+      <div style={{position: "relative", display:"flex", flexDirection:"column", alignItems:"center", marginTop: "110px",padding:"20px" }}>
         <h1>Arbre de compétences développé et leur projet (Data viz)</h1>
         <div className={styles.skillsDataViz} ref={containerRef}></div>
       </div>

@@ -77,3 +77,21 @@
 
     }
 }
+
+.link {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    a {
+        color: #EFEFEF;
+        background-color: #66271F;
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+        transition-duration: 0.3s;
+        
+        &:hover {
+            background-color:#EA5930 ;
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+        }
+    }
+}

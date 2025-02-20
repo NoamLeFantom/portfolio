@@ -12,8 +12,17 @@
 }
 
 .galleryContainer {
+    position: relative;
+    padding-top: 140px;
     color: #3D312E;
-    padding: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 445px) {
+        padding-top: 80px;
+    }
+    @media screen and (min-width: 1024px) {
+        padding-top: 0px;
+    }
 }
 .projectContainer
 {

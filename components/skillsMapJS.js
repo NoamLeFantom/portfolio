@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 export function createForceGraph(container, data, legendData, onNodeClick) {
   const width = 1000;
-  const height = 350;
+  const height = 1000;
 
   const color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -26,7 +26,7 @@ export function createForceGraph(container, data, legendData, onNodeClick) {
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-    .attr("viewBox", [-width / 2, -height / 2, width, height])
+    .attr("viewBox", [-width /2, -height / 2, width, height])
     .attr("style", "max-width: 100%; height: auto;");
 
   // Créez un conteneur pour afficher les détails
@@ -40,7 +40,7 @@ export function createForceGraph(container, data, legendData, onNodeClick) {
     .selectAll("line")
     .data(links)
     .join("line")
-    .attr("stroke-width", (d) => Math.sqrt(d.value || 1));
+    .attr("stroke-width", (d) => Math.sqrt(d.value || 10));
 
   // Nœuds
   const node = svg
@@ -50,7 +50,7 @@ export function createForceGraph(container, data, legendData, onNodeClick) {
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", (d) => (d.highlighted ? 8 : 5))
+    .attr("r", (d) => (d.highlighted ? 10 : 5))
     .attr("fill", (d) => (d.highlighted ? "#ff9800" : color(d.group)))
     .on("click", (event, d) => {
       if (onNodeClick) onNodeClick(d); // Appelle la fonction si définie
@@ -100,7 +100,9 @@ export function createForceGraph(container, data, legendData, onNodeClick) {
     .attr("class", "legend")
     .style("display", "flex")
     .style("gap", "10px")
-    .style("margin-top", "10px");
+    .style("margin-top", "10px")
+    .style("flex-direction","row")
+    .style("flex-wrap","wrap")
 
   legendData.forEach((item) => {
     const legendItem = legend
