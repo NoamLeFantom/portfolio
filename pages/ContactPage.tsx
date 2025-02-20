@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Ui_transitionR from "../components/Ui_transitionR";
 import Footer from "../components/Footer";
 import styles from "../styles/HP_PresProjects.module.scss";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 type ColorBackground = {
   BackgroundFill?: string;
@@ -34,6 +36,7 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       </main>
       <Ui_transitionR className={"Right yInvert"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
       {/* <Footer/> */}
+      <Analytics /><SpeedInsights />
     </div>
   );
 };

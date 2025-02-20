@@ -3,6 +3,8 @@ import ForceGraph from "../components/SkillsMap";
 import Header from "../components/Header";
 import skillsData from "../public/src/data/skills.json";
 import Ui_transitionR from "../components/Ui_transitionR";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const legendData = [
   { color: "#1f77b4", label: "Entreprendre" },
@@ -41,6 +43,8 @@ const SkillsPage = () => {
         />
       )}
 <Ui_transitionR className={""} BackgroundShapeFill={"#d7d7d7"} BackgroundFill={"#EA5930"} />
+
+<Analytics /><SpeedInsights />
 
     </div>
   );

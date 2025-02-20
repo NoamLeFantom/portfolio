@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 import Ui_transitionR from "../components/Ui_transitionR";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 type ColorBackground = {
@@ -21,6 +23,7 @@ const GalerieP: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         <Gallery BackgroundFill={"#efefef"} />
       </main>
       <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
+      <Analytics /><SpeedInsights />
     </section>
   );
 };
