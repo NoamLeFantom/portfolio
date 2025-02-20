@@ -6,6 +6,9 @@ import HP_Presentation from "../components/HP_Presentation";
 import HP_PresProjects from "../components/HP_PresProjects";
 import Ui_transitionR from "../components/Ui_transitionR";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +32,8 @@ export default function Home() {
         {/* Autres sections */}
         <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
         <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
+        <Analytics />
+        <SpeedInsights />
       </main>
     </div>
   );
