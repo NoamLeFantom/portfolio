@@ -22,12 +22,13 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
             <h1>Contactez-moi dès maintenant !</h1>
             <div className={styles.text}>
               <p style={{marginBottom:'0px'}}>
-                Dans le cadre de la réalisation d’une infographie sur le thème des sous-marins de l’Ifremer, nous devions choisir un engin parmi l’ensemble de leur flotte.
+                Veuillez trouvez mes information de contact dans mon cv.
                 <br />
-                J’ai donc choisi de réaliser mon infographie sur le Nautile, le seul sous-marin habitable de l’Ifremer.<br /><br />
-                J’ai opté pour une conception en 3D afin de mettre à l’épreuve mes compétences, notamment en modélisation et en rendu.<br /><br />
-                Ce projet m’a également permis d’explorer des notions clés en conception d’infographie, telles que l’agencement des différents éléments.
               </p>
+              <a style={{color:`white` ,textAlign: `center`, backgroundColor:`#66271F`}}
+            href="https://drive.google.com/file/d/1Ae4sLgKBmPtNJ3iuPzbwPkCzTE0JMFn8/view?usp=drive_link" >
+            Télécharger mon CV
+          </a>
             </div>
         </div>
       </main>
