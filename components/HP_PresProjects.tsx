@@ -8,7 +8,7 @@ type ColorBackground = {
 const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
 
   return (
-    <div className={'GlobalPage'}>
+    <div className={''}>
       <div style={{ background: `${BackgroundFill}` }}>
         <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
           <h1>Infographie Ifremer Nautile</h1>
