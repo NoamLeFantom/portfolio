@@ -20,7 +20,7 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
         <div  className={`${styles.Contact_container} ${styles.PresProj_Right}`} style={{ background: `#EFEFEF` }} >
             <h1>Contactez-moi dès maintenant !</h1>
-            <div className={styles.text}>
+            <div className={styles.text}  style={{display:`flex`,flexDirection:`column`}}>
               <p style={{marginBottom:'0px'}}>
                 Veuillez trouvez mes information de contact dans mon cv.
                 <br />
