@@ -6,7 +6,7 @@ import HP_Presentation from "../components/HP_Presentation";
 import HP_PresProjects from "../components/HP_PresProjects";
 import Ui_transitionR from "../components/Ui_transitionR";
 import { useEffect } from "react";
-import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Home() {
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function Home() {
   }, []); // Le titre sera défini quand le composant est monté
   return (
     <div className={'GlobalPage'}>
-      <Analytics />
+      <SpeedInsights />
       <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
       <Header BackgroundFill={"#EA5930"} />
       <main>
