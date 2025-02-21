@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import styles from "../styles/Gallery.module.scss";
 import projects from "../public/src/data/projects.json";
-import marked from "marked";
 
 type ColorBackground = {
   BackgroundFill?: string;
