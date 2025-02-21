@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import styles from "../styles/Gallery.module.scss";
 import projects from "../public/src/data/projects.json";
+import marked from "marked";
 
 type ColorBackground = {
   BackgroundFill?: string;
@@ -67,12 +68,8 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
   // Fonction pour transformer le texte avec des liens
   const parseTextWithLinks = (text: string) => {
     const regex = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
-    return text.split(regex).map((part, index) => {
-      if (index % 3 === 1) {
-        // Texte du lien
-        return <a href={text.split(regex)[index + 1]} key={index} target="_blank" rel="noopener noreferrer">{part}</a>;
-      }
-      return part;
+    return text.replace(regex, (match, linkText, url) => {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
     });
   };
 
@@ -126,7 +123,7 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
                 }
               />
               <div className={styles.popupDescription}>
-                <p style={{ whiteSpace: `pre-wrap`}} className={styles.popupDescription}>{parseTextWithLinks(selectedProject.description)}</p>
+                <p style={{ whiteSpace: `pre-wrap`}} className={styles.popupDescription}dangerouslySetInnerHTML={{ __html: parseTextWithLinks(selectedProject.description) }}></p>
                 <div className={styles.detailsSection}>
                   <h4>Details</h4>
                   <div className={styles.detailsList}>
