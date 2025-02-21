@@ -1,7 +1,7 @@
 {
   "projet2": {
     "titre": "Eiffel tower _",
-    "description": "Pour un projet de modding sur Arma 3, j'ai réalisé cette Tour Eiffel. Je l'ai modélisé et texturé entièrement sur blender.\nJ'ai également réalisé une version convex de ce modèle. Les animations ont été réalisées sur la base du moteur Arma 3 à base de mémory et de config.",
+    "description": "\tDans le cadre d'un projet de modding sur Arma 3, j'ai conçu cette Tour Eiffel, entièrement modélisée et texturée sur Blender. \nJ'ai également créé une version convexe de ce modèle. Les animations ont été réalisées en utilisant le moteur Arma 3, en intégrant des mémory et des config.",
     "details": [
       "3d",
       "Blender",
@@ -13,7 +13,7 @@
   },
   "projet3": {
     "titre": "Cabourg city hall",
-    "description": "Un projet de partenaire pour MetaverseGT avec la maison du cinéma et la ville de Cabourg. Tout le processus de création a été réalisé sur blender à l'exception du feuillage réalisé en collaboration avec Jomsims (voir \"The Sims Ressource\").",
+    "description": "\tUn projet de partenariat pour MetaverseGT en collaboration avec la Maison du Cinéma et la ville de Cabourg. Tout le processus de création a été réalisé sur Blender, à l'exception du feuillage, créé en partenariat avec Jomsims, voir [The Sims Resource](https://www.thesimsresource.com/artists/jomsims/)",
     "details": [
       "3d",
       "Blender",

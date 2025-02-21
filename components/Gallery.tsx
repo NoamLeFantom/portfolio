@@ -64,6 +64,18 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     }
   };
 
+  // Fonction pour transformer le texte avec des liens
+  const parseTextWithLinks = (text: string) => {
+    const regex = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
+    return text.split(regex).map((part, index) => {
+      if (index % 3 === 1) {
+        // Texte du lien
+        return <a href={text.split(regex)[index + 1]} key={index} target="_blank" rel="noopener noreferrer">{part}</a>;
+      }
+      return part;
+    });
+  };
+
   return (
     <div className={styles.galleryContainer} style={{ background: `${BackgroundFill}` }}>
       <p style={{ marginTop: "0px", paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
@@ -114,7 +126,7 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
                 }
               />
               <div className={styles.popupDescription}>
-                <p className={styles.popupDescription}>{selectedProject.description}</p>
+                <p style={{ whiteSpace: `pre-wrap`}} className={styles.popupDescription}>{parseTextWithLinks(selectedProject.description)}</p>
                 <div className={styles.detailsSection}>
                   <h4>Details</h4>
                   <div className={styles.detailsList}>

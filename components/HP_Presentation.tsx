@@ -17,12 +17,24 @@ const HP_Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       />
       <div className={styles.text}>
         <p>
-          Je suis un étudiant issu de la formation <strong>MMI à l'IUT de Lannion</strong> et alternant à la <strong>DSI de chez Cooperl</strong> en tant que responsable de la <strong>communication interne</strong> au sein de la Direction des Systèmes d'Information.<br />
-          Ma capacité à communiquer auprès des équipes, à chercher les informations nécessaires et à travailler en équipe m'ont permis durant ces deux dernières années, de produire du contenu varié et divers et de développer mon sens de l'écoute et de l'empathie.
-          < br /> <br />
-          Durant ma formation, j'ai pu apprendre différentes notions de manière approfondie pour la plupart, notamment en développement web, en audiovisuel et en communication.<br />
-          Avec le temps passé en projet, j'ai développé un attrait pour le management et la gestion de projet.<br />
-          Mon sens du travail en autonomie combiné à ma capacité à travailler en équipe me permettent de me rendre très flexible selon les situations.
+          Je suis étudiant en formation MMI à l'IUT de Lannion et alternant à la DSI de Cooperl en tant que responsable de la communication interne au sein de la Direction des Systèmes d'Information.
+          < br />
+          < br />
+          Grâce à ma capacité à communiquer efficacement, à rechercher les informations pertinentes et à collaborer avec différentes équipes, j'ai pu, au cours des deux dernières années, produire un contenu varié et développer mon sens de l'écoute ainsi que mon empathie.
+          <br />
+          < br />
+          Ma formation m'a permis d'acquérir des compétences approfondies en développement web, en audiovisuel et en communication. Par ailleurs, mon engagement dans divers projets m'a amené à développer un fort intérêt pour le management et la gestion de projet.
+          <br />
+          < br />
+          Autonome tout en étant à l'aise dans le travail en équipe, je sais m'adapter aux différentes situations avec flexibilité et efficacité.
+          < br />
+          < br />< br />
+          Je m'investis également dans divers milieux associatifs à plusieurs niveaux.
+
+          Je fais partie de la direction de l'association de voile LVEL à Lannion. À ce titre, j'interviens principalement dans les relations entre l'association et l'IUT, notamment en endossant le rôle de porteur de projet pour les différents concours organisés dans le cadre de la Régate des IUT.
+
+          < br />
+          < br />Mon rôle consiste à guider et à assister les étudiants dans la réalisation des livrables nécessaire au concours. Je coordonne aussi la participation au challenge voile de cette régate.
         </p>
       </div>
       <div className={`${styles.link}`}>
