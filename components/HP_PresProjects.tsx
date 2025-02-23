@@ -11,7 +11,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     <div className={''}>
       <div style={{ background: `${BackgroundFill}` }}>
         <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
-          <h1>Infographie Ifremer Nautile</h1>
+          <h2>Infographie Ifremer Nautile</h2>
           <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/FYzzeZrmXmg?si=tlmNh9HCPrI2UWXL" title="Nautile presentation"></iframe>
 
 
@@ -30,7 +30,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           </div>
         </section>
         <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
-          <h1>Motion animation</h1>
+          <h2>Motion animation</h2>
           <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/PB_a2CoFVcY?si=eputsSW0DSrAi18d" title="Motion animation"></iframe>
           <div className={styles.text}>
             <p>
@@ -45,7 +45,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           </div>
         </section>
         <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
-          <h1>Cadreur / Monteur TedX Lannion 2025</h1>
+          <h2>Cadreur / Monteur TedX Lannion 2025</h2>
           <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/_Cj7S7ElV2U?si=l3DO2ApEyVIpWIXn" title="TedX vidéo"></iframe>
           <div className={styles.text}>
             <p>

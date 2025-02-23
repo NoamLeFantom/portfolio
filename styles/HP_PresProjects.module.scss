@@ -12,7 +12,6 @@
     h1 {
         text-align: left;
         justify-content: center;
-        font-size: 1.8rem;
         color: #3D312E;
     }
 
@@ -78,9 +77,6 @@
 
 
     @media screen and (min-width: 1800px) {
-        h1 {
-            font-size: 2.8rem;
-        }
 
         .HP_mediaContent {
             height: 450px;

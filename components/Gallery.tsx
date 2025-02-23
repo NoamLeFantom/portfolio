@@ -74,8 +74,10 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
 
   return (
     <div className={styles.galleryContainer} style={{ background: `${BackgroundFill}` }}>
-      <p style={{ marginTop: "0px", paddingTop: "0px", paddingBottom: "0px" }}>Découvrez l'ensemble de mes projets</p>
-      <p style={{ paddingTop: "0px", paddingBottom: "0px" }}>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
+      <div style={{ padding: `20px` }}>
+        <p>Découvrez l'ensemble de mes projets</p>
+        <p>Vous pouvez trier ces derniers par domaines (3D, photos, vidéos...)</p>
+      </div>
       {/* Barre de recherche */}
       <div id='Projects' className={styles.searchBar}>
         <input
@@ -122,7 +124,7 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
                 }
               />
               <div className={styles.popupDescription}>
-                <p style={{ whiteSpace: `pre-wrap`}} className={styles.popupDescription}dangerouslySetInnerHTML={{ __html: parseTextWithLinks(selectedProject.description) }}></p>
+                <p style={{ whiteSpace: `pre-wrap` }} className={styles.popupDescription} dangerouslySetInnerHTML={{ __html: parseTextWithLinks(selectedProject.description) }}></p>
                 <div className={styles.detailsSection}>
                   <h4>Details</h4>
                   <div className={styles.detailsList}>
