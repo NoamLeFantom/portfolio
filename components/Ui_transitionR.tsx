@@ -10,7 +10,7 @@ type TransitionProps = {
 const Ui_transitionR: React.FC<TransitionProps> = ({ className, BackgroundShapeFill, BackgroundFill }) => {
   return (
     <div className={`${styles.transition_ui} ${className}`} style={{ backgroundColor: `${BackgroundFill}`}}>
-      <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg">
         <path d="M 0 0 L 1920 0 L 1920 100 L 0 200 Z" fill={`${BackgroundShapeFill}`} />
       </svg>
     </div>

@@ -4,6 +4,7 @@ import timelineData from "../public/src/data/timeline.json";
 import Header from "../components/Header";
 import HP_Presentation from "../components/HP_Presentation";
 import HP_PresProjects from "../components/HP_PresProjects";
+import HP_Top from "../components/HP_Top";
 import Ui_transitionR from "../components/Ui_transitionR";
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react"
@@ -17,11 +18,11 @@ export default function Home() {
   }, []); // Le titre sera défini quand le composant est monté
   return (
     <div className={'GlobalPage'}>
-      <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
       <Header BackgroundFill={"#EA5930"} />
+      <Ui_transitionR className={"transitionLeft transitionSpecial"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
       <main>
-        <HP_Presentation BackgroundFill={"#EFEFEF"} />
-        <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+        <HP_Top BackgroundFill={"#EFEFEF"} />
+        <Ui_transitionR className={"transitionyYInvert transitionLeft"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
         <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Voir quelques projets</h1>
         <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
         <HP_PresProjects BackgroundFill={"#EFEFEF"} />
@@ -30,6 +31,8 @@ export default function Home() {
         <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Un petit résumé sur moi ?</h1>
         <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
         {/* Autres sections */}
+        <HP_Presentation BackgroundFill={"#EFEFEF"} />
+
         <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
         <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
         <Analytics />

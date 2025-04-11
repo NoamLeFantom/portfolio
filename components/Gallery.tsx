@@ -1,4 +1,6 @@
 import { useState, useRef } from "react";
+import Select from "react-select";
+
 import styles from "../styles/Gallery.module.scss";
 import projects from "../public/src/data/projects.json";
 
@@ -9,15 +11,31 @@ type ColorBackground = {
 const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  const [searchTerm, setSearchTerm] = useState<string>(""); // État pour le terme de recherche
   const popupRef = useRef<HTMLDivElement | null>(null);
+
+  const [selectedOptions, setSelectedOptions] = useState<{ value: string; label: string }[]>([]);
+  const tagOptions = [
+    { value: "3D", label: "3D" },
+    { value: "photo", label: "Photo" },
+    { value: "vidéo", label: "Vidéo" },
+    { value: "design", label: "Design" },
+    { value: "modelling", label: "Modelling" },
+    { value: "illustration", label: "Illustration" }
+  ];
+
+  const selectedTags = selectedOptions.map((opt) => opt.value);
 
   // Filtrage des projets en fonction du terme de recherche
   const filteredProjects = Object.entries(projects).filter(([key, project]) =>
+    selectedTags.length === 0 ||
     project.details.some((detail: string) =>
-      detail.toLowerCase().includes(searchTerm.toLowerCase())
+      selectedTags.some(tag =>
+        detail.toLowerCase().includes(tag.toLowerCase())
+      )
     )
   );
+
+
 
   const handleClick = (project: any) => {
     setSelectedProject(project);
@@ -80,12 +98,17 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       </div>
       {/* Barre de recherche */}
       <div id='Projects' className={styles.searchBar}>
-        <input
-          type="text"
-          placeholder="Search by tags..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <div className={styles.searchBar}>
+          <label>Filtrer par domaines :</label>
+          <Select
+            options={tagOptions}
+            isMulti
+            value={selectedOptions}
+            onChange={(selected) => setSelectedOptions(selected as { value: string; label: string }[])}
+            placeholder="Choisissez un ou plusieurs domaines..."
+          />
+        </div>
+
       </div>
 
       {/* Affichage des projets filtrés */}

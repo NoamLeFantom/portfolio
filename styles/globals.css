@@ -5,38 +5,45 @@ body {
   font-family: Arial, sans-serif;
   background-color: #d7d7d7;
 }
-.GlobalPage
-{
+
+.GlobalPage {
   position: relative;
   top: 85px;
 }
-h1
-{
-  
+
+h1 {
+
   font-size: 2rem;
   margin: 0;
 }
-h2
-{
-  
+
+h2 {
+
   font-size: 1.8rem;
   margin: 0;
 }
-.Left
-{
-    transform:scaleX(-1);
-}
-.yInvert
-{
-    transform: scaleY(-1);
+
+
+
+.transitionyYInvert {
+  transform: scale(-1);
 }
 
-a
-{
+@media screen and (min-width: 1024px) {
+  .transitionSpecial {
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .transitionSpecial {
+    margin-top: -100px;
+  }
+}
+
+a {
   padding: 20px;
 }
 
-.homeSubTitle
-{
-  padding-left:20px;
+.homeSubTitle {
+  padding-left: 20px;
 }
