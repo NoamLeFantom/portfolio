@@ -141,7 +141,7 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
                 src={'src' + selectedProject.images[currentImageIndex]}
                 alt={selectedProject.titre}
                 className={
-                  selectedProject.images[currentImageIndex].includes(".jpg")
+                  selectedProject.images[currentImageIndex].includes(".webp")
                     ? styles.verticalImage
                     : styles.horizontalImage
                 }
