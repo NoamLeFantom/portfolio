@@ -22,15 +22,17 @@ export default function Home() {
       <Ui_transitionR className={"transitionLeft transitionSpecial"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
       <main>
         <HP_Top BackgroundFill={"#EFEFEF"} />
+
         <Ui_transitionR className={"transitionyYInvert transitionLeft"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
         <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Voir quelques projets</h1>
         <Ui_transitionR className={""} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
+
         <HP_PresProjects BackgroundFill={"#EFEFEF"} />
         
-        <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#66271F"} />
+        <Ui_transitionR className={"transitionyYInvert transitionLeft"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
         <h1 className={"homeSubTitle"} style={{ backgroundColor: "#66271F", color: "#EFEFEF"}} >Un petit résumé sur moi ?</h1>
         <Ui_transitionR className={"Left"} BackgroundShapeFill={"#66271F"} BackgroundFill={"#EFEFEF"} />
-        {/* Autres sections */}
+
         <HP_Presentation BackgroundFill={"#EFEFEF"} />
 
         <Timeline data={timelineData} BackgroundFill={"#EFEFEF"} />
