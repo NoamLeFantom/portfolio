@@ -20,7 +20,7 @@ const HP_Top: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       setTimeout(() => {
         setIndex1((i) => (i + 1) % mots1.length);
         setFade(false);
-      }, 500);
+      }, 5000);
     }, 2000);
 
     return () => clearInterval(interval);

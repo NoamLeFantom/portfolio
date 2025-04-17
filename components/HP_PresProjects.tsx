@@ -46,7 +46,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         </section> */}
         <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
           <h2>Laval Virtual hackathon</h2>
-          <iframe className={styles.HP_mediaContent} src="src/uploads/VRLavalVirtual.mp4" title="Laval Virtual hackathon project" auto-play="none"></iframe>
+          <iframe className={styles.HP_mediaContent} src="src/uploads/VRLavalVirtual.mp4" title="Laval Virtual hackathon project" auto-play="false"></iframe>
           <div className={styles.text}>
             <p>
               L'IUT de Lannion a participé à la compétition interécole du hackathon organisé lors du Laval Virtual.
