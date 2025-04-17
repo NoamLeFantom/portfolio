@@ -29,7 +29,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
             </p>
           </div>
         </section>
-        <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
+        {/* <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
           <h2>Motion animation</h2>
           <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/PB_a2CoFVcY?si=eputsSW0DSrAi18d" title="Motion animation"></iframe>
           <div className={styles.text}>
@@ -41,6 +41,17 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
               <br />
               <br />
               Cette expérience m’a également appris à utiliser <strong>PlayPlay</strong> en combinaison avec <strong>DaVinci Resolve</strong>. L’association de ces outils représente un véritable atout pour la production de vidéos en série.
+            </p>
+          </div>
+        </section> */}
+        <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
+          <h2>Laval Virtual hackathon</h2>
+          <iframe className={styles.HP_mediaContent} src="src/uploads/VRLavalVirtual.mp4" title="Laval Virtual hackathon project" auto-play="none"></iframe>
+          <div className={styles.text}>
+            <p>
+              L'IUT de Lannion a participé à la compétition interécole du hackathon organisé lors du Laval Virtual.
+              Cette compétition s'inscrit dans l'un des plus gros évenement dans le domaine des XR en Europe.<br/>
+              L'objectif lors de ce hackathon de 32h était de réaliser un jeu en XR sur une thématique défini : "Prove me wrong - The Humankinds lives in simulation".
             </p>
           </div>
         </section>

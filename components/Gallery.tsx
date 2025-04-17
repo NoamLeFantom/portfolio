@@ -135,7 +135,8 @@ const Gallery: React.FC<ColorBackground> = ({ BackgroundFill }) => {
             <button className={styles.closeButton} onClick={handleClosePopup}>
               X
             </button>
-            <h3>{selectedProject.titre}</h3>
+            <div style={{display:'flex', flexDirection:'row',columnGap: '20px'}}><h3>{selectedProject.titre}</h3>
+            <h4>{selectedProject.date}</h4></div>
             <div className={styles.popupBody}>
               <img
                 src={'src' + selectedProject.images[currentImageIndex]}
