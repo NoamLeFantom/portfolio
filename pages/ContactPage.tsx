@@ -24,7 +24,7 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           <h1>Contactez-moi dès maintenant !</h1>
           <div className={styles.text} style={{ display: `flex`, flexDirection: `column` }}>
             <p style={{ marginBottom: '0px' }}>
-              Veuillez trouvez mes information de contact dans mon cv.
+              Veuillez trouver mes informations de contact dans mon cv.
               <br />
             </p>
             <div className={`${styles.link}`}>
