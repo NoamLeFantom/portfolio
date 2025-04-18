@@ -41,11 +41,10 @@ const SkillsPage = () => {
           resourceDetails={resourceDetails} // Passer les détails ici
           
         />
-      )}
       <iframe style="width:100%;height:100%;border:0px;" allow="autoplay; camera; microphone" src="https://cables.gl/view/tvDm1H"></iframe>
 <Ui_transitionR className={""} BackgroundShapeFill={"#d7d7d7"} BackgroundFill={"#EA5930"} />
-
-<Analytics /><SpeedInsights />
+      )}
+    <Analytics /><SpeedInsights />
 
     </div>
   );
