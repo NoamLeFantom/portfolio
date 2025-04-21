@@ -40,7 +40,7 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     >
       <nav className={styles.container}>
         <a href="/">
-          <img src="/src/ui/logo.png" alt="Logo du site" className={styles.logo} />
+          <img src="/src/ui/logo-letter.png" alt="Logo du site" className={styles.logo} />
         </a>
         <button className={styles.hamburger} onClick={toggleMenu} aria-label="Menu">
           {isOpen ? (
