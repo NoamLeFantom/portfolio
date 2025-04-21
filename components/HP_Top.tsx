@@ -51,7 +51,7 @@ const HP_Top: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         </p>
       </div>
       <div className={styles.link}>
-        <a href="https://drive.google.com/file/d/1Ae4sLgKBmPtNJ3iuPzbwPkCzTE0JMFn8/view?usp=drive_link">
+        <a href="/ContactPage">
           Télécharger mon CV
         </a>
       </div>

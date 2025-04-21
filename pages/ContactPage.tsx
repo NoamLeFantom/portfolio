@@ -27,12 +27,8 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
               Veuillez trouver mes informations de contact dans mon cv.
               <br />
             </p>
-            <div className={`${styles.link}`}>
-              <a
-                href="https://drive.google.com/file/d/1Ae4sLgKBmPtNJ3iuPzbwPkCzTE0JMFn8/view?usp=drive_link" >
-                Voir mon CV
-              </a></div>
           </div>
+          <iframe className={'pdfViewer'} src="/src/noamlg_Website-ressources/NoamCV-04-2025.pdf"> </iframe>
         </div>
       </main>
       <Ui_transitionR className={"Right yInvert"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
