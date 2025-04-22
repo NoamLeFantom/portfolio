@@ -40,7 +40,6 @@ const SkillsPage = () => {
           legend={legendData}
           resourceDetails={resourceDetails}
         />)}
-      <iframe style={{ width: '100%', height: '100%', border: '0px' }} allow="autoplay" src="https://cables.gl/view/tvDm1H"></iframe>
 
       <Ui_transitionR className={""} BackgroundShapeFill={"#d7d7d7"} BackgroundFill={"#EA5930"} />
 
