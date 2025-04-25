@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import classNames from "classnames";
 import styles from "../styles/Header.module.scss";
 
@@ -9,21 +9,51 @@ type ColorBackground = {
 const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const [scrollState, setScrollState] = useState({ isVisible: true, lastY: 0 });
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
-  const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
+  const toggleDropdown = () => {
+    if (isMobile) {
+      setIsDropdownOpen((prev) => !prev);
+    }
+  };
 
   const handleScroll = useCallback(() => {
     requestAnimationFrame(() => {
       setScrollState((prev) => {
         const currentY = window.scrollY;
+        const isVisible = currentY < prev.lastY || currentY < 50;
+        
+        // Close menus when scrolling down
+        if (!isVisible) {
+          setIsOpen(false);
+          setIsDropdownOpen(false);
+        }
+        
         return {
-          isVisible: currentY < prev.lastY || currentY < 50,
+          isVisible,
           lastY: currentY,
         };
       });
     });
+  }, []);  
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    // Initial check
+    checkIfMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkIfMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
   useEffect(() => {
@@ -31,10 +61,10 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
+  // Handle clicks outside the dropdown to close it on mobile
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      const dropdown = document.querySelector(`.${styles.dropdown}`);
-      if (dropdown && !dropdown.contains(event.target as Node)) {
+      if (isMobile && dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsDropdownOpen(false);
       }
     };
@@ -43,8 +73,7 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
-  
+  }, [isMobile]);
 
   return (
     <header
@@ -54,12 +83,13 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       })}
       style={{ background: BackgroundFill }}
     >
-      <nav className={styles.container}>
-        <a href="/">
+      <div className={styles.container}>
+        <a href="/" className={styles.logoLink}>
           <img src="/src/ui/logo-letter.png" alt="Logo du site" className={styles.logo} />
         </a>
+        
         <button className={styles.hamburger} onClick={toggleMenu} aria-label="Menu">
-        {isOpen ? (
+          {isOpen ? (
             <svg width="25" height="27" xmlns="http://www.w3.org/2000/svg">
               <line x1="1.25" y1="-1.25" x2="32.8092" y2="-1.25"
                 transform="matrix(0.679134 -0.734015 0.679134 0.734015 1.86914 27)"
@@ -87,28 +117,46 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         </button>
 
         <nav className={classNames(styles.menu, { [styles.menuOpen]: isOpen })} style={{ background: BackgroundFill }}>
-          <li className={styles.link}><a href="/">Accueil</a></li>
-          <li className={styles.link}><a href="/GaleriePage">Galerie</a></li>
-          <li className={styles.link}><a href="/ContactPage">Contact</a></li>
-          <li className={styles.link}>
-          <div className={styles.dropdown}>
-  <button className={styles.dropbtn} onClick={toggleDropdown}>
-    Projets intéracifs
-  </button>
-  <div
-    className={classNames(styles.dropdown_content, {
-      [styles.dropdownOpen]: isDropdownOpen,
-    })}
-  >
-    <a href="/SkillsPage">Cartographie de Compétences</a>
-    <a href="/CablesGLPage">Projets Cables.GL</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-
-          </li>
+          <ul className={styles.menuList}>
+            <li className={styles.link}><a href="/">Accueil</a></li>
+            <li className={styles.link}><a href="/GaleriePage">Galerie</a></li>
+            <li className={styles.link}><a href="/ContactPage">Contact</a></li>
+            <li className={styles.link}>
+              <div 
+                ref={dropdownRef}
+                className={classNames(styles.dropdown, {
+                  [styles.dropdownActive]: isDropdownOpen
+                })}
+              >
+                <span 
+                  className={styles.dropbtn} 
+                  onClick={toggleDropdown}
+                  tabIndex={0}
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded={isDropdownOpen}
+                >
+                  Projets intéracifs
+                  {isMobile && (
+                    <span className={styles.dropdownArrow}>
+                      {isDropdownOpen ? ' ▲' : ' ▼'}
+                    </span>
+                  )}
+                </span>
+                <div 
+                  className={classNames(styles.dropdown_content, {
+                    [styles.dropdownOpen]: isMobile && isDropdownOpen
+                  })}
+                >
+                  <a href="/SkillsPage">Cartographie de Compétences</a>
+                  <a href="/CablesGLPage">Projets Cables.GL</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </nav>
-      </nav>
+      </div>
     </header>
   );
 };

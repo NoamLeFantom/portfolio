@@ -13,6 +13,7 @@
         }
 
         canvas {
+            z-index: 0;
             display: block;
             position: absolute;
             outline:0;
@@ -37,8 +38,205 @@
     <meta itemprop="image" content="screenshot.png">
     <meta name="description" content="made with cables"/>
 
+    <style>
+        .link {
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 0px;
+  width: 85%;
+  border-bottom-style: inset;
+  border-width: 1px;
+  border-color: #66271F;
+  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 470%, 0 470%);
+          clip-path: polygon(0 0%, 100% 0, 100% 470%, 0 470%);
+  transition-duration: 0.3s;
+}
+.link a {
+  color: #EFEFEF;
+  text-decoration: none;
+}
+.link:hover {
+  transform: scaleX(1);
+  background-color: #66271F;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 480% 80%, 0 520%);
+          clip-path: polygon(0 20%, 100% 0, 480% 80%, 0 520%);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50000000000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .container .logo {
+  max-width: 60px;
+}
+.header .container .hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  z-index: 2;
+}
+.header .container .menu {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  -webkit-clip-path: circle(0% at top right);
+          clip-path: circle(0% at top right);
+  transition: opacity 0.3s ease, -webkit-clip-path 0.5s ease;
+  transition: clip-path 0.5s ease, opacity 0.3s ease;
+  transition: clip-path 0.5s ease, opacity 0.3s ease, -webkit-clip-path 0.5s ease;
+}
+.header .container .menuOpen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  -webkit-clip-path: circle(150% at top right);
+          clip-path: circle(150% at top right);
+}
+
+@media (min-width: 740px) {
+  .link {
+    position: relative;
+    text-align: left;
+    padding: 10px;
+    border-bottom-style: none;
+    border-width: 0px;
+    border-color: #66271F;
+    width: auto;
+  }
+  .link a {
+    color: #EFEFEF;
+  }
+  .header.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .header.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  .header .container .menu {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 1;
+    -webkit-clip-path: none;
+            clip-path: none;
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .header .container .hamburger {
+    display: none;
+  }
+}
+.dropdown {
+  position: relative;
+}
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.dropdown .dropdown_content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #66271F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.dropdown .dropdown_content a {
+  color: white;
+  padding: 3px 6px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown .dropdown_content a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.dropdown .dropdownOpen {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}/*# sourceMappingURL=Header.module.css.map */
+    </style>
 </head>
 <body>
+    <header class="header visible" style="background: #E45930;">
+        <nav class="container">
+          <a href="/">
+            <img src="/src/ui/logo-letter.png" alt="Logo du site" class="logo" />
+          </a>
+          <button class="hamburger" aria-label="Menu">
+            <!-- Menu fermé par défaut -->
+            <svg width="31" height="23" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M30.0312 11.5C30.0312 10.7233 29.4016 10.0938 28.625 10.0938H2.375C1.59835 10.0938 0.96875 10.7233 0.96875 11.5C0.96875 12.2767 1.59835 12.9062 2.375 12.9062H28.625C29.4016 12.9062 30.0312 12.2767 30.0312 11.5Z"
+                fill="white"
+              />
+              <path
+                d="M30.0312 2.125C30.0312 1.34835 29.4016 0.71875 28.625 0.71875H2.375C1.59835 0.71875 0.96875 1.34835 0.96875 2.125C0.96875 2.90165 1.59835 3.53125 2.375 3.53125H28.625C29.4016 3.53125 30.0312 2.90165 30.0312 2.125Z"
+                fill="white"
+              />
+              <path
+                d="M30.0312 20.875C30.0312 20.0983 29.4016 19.4688 28.625 19.4688H2.375C1.59835 19.4688 0.96875 20.0983 0.96875 20.875C0.96875 21.6517 1.59835 22.2812 2.375 22.2812H28.625C29.4016 22.2812 30.0312 21.6517 30.0312 20.875Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+      
+          <nav class="menu">
+            <li class="link"><a href="/">Accueil</a></li>
+            <li class="link"><a href="/GaleriePage">Galerie</a></li>
+            <li class="link"><a href="/ContactPage">Contact</a></li>
+            <li class="link">
+              <div class="dropdown">
+                <button class="dropbtn">Projets intéracifs</button>
+                <div class="dropdown_content">
+                  <a href="/SkillsPage">Cartographie de Compétences</a>
+                  <a href="src/SunburstCablesgl/index.html">Projets Cables.GL</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </li>
+          </nav>
+        </nav>
+      </header>
     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
 
     
