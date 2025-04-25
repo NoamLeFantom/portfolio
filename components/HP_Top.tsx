@@ -49,9 +49,10 @@ const HP_Top: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         <p>
           Je suis étudiant en formation MMI à l'IUT de Lannion et alternant à la DSI de Cooperl en tant que responsable de la communication interne au sein de la Direction des Systèmes d'Information.
         </p>
+        <p>J'aime prendre part à divers projets tant sur le plan professionnel que associatif ou encore personnel.</p>
       </div>
       <div className={styles.link}>
-        <a href="/ContactPage">
+        <a style={{padding:"10px"}} href="/ContactPage">
           Télécharger mon CV
         </a>
       </div>
