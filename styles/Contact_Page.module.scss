@@ -34,3 +34,30 @@
     }
 }
 
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        transition: transform 0.2s ease;
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
