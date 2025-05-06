@@ -35,9 +35,9 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           </div>
           <div className={styles.text} style={{ display: `flex`, flexDirection: `column` }}>
             <p style={{ marginBottom: '0px' }}>
-              Veuillez trouver mes informations de contact dans mon cv.
-              <br />
+            Vous trouverez sûrement des informations qui vous intéresseront dans mon cv.
             </p>
+            <hr />
           </div>
           <iframe className={'pdfViewer'} src="/src/noamlg_Website-ressources/NoamCV-05-2025.pdf"> </iframe>
         </div>
