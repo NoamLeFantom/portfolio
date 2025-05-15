@@ -17,8 +17,7 @@ const HP_Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       />
       <div className={styles.text}>
         <p>
-          Je suis étudiant en formation MMI à l'IUT de Lannion et alternant à la DSI de Cooperl en tant que responsable de la communication interne au sein de la Direction des Systèmes d'Information.
-          < br />
+        Étudiant en formation MMI à l'IUT de Lannion et alternant à la DSI chez Cooperl en tant que responsable de la communication interne.          < br />
           < br />
           Grâce à ma capacité à communiquer efficacement, à rechercher les informations pertinentes et à collaborer avec différentes équipes, j'ai pu, au cours des deux dernières années, produire un contenu varié et développer mon sens de l'écoute ainsi que mon empathie.
           <br />
@@ -36,6 +35,8 @@ const HP_Presentation: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           < br />
           < br />Mon rôle consiste à guider et à assister les étudiants dans la réalisation des livrables nécessaire au concours. Je coordonne aussi la participation au challenge voile de cette régate.
         </p>
+        <p>Admis à l'ENSAM dans le master MTI3D de Laval et Chalon-sur-Saône, je suis aujourd'hui à la recherche d'une alternance pour la rentrée 2025 dans le domaine de la 3D et des technologies interactives en XR</p>
+        <p>Mon objectif à travers ce master et cette alternance est de monter en compétences de manière professionnelle sur le domaine de la XR.</p>
       </div>
       <div className={`${styles.link}`}>
         <a

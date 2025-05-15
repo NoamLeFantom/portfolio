@@ -74,7 +74,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           </div>
         </section>
         <section className={`${styles.HP_PresProjects_container} ${styles.text}`} style={{ alignItems: `center` }}><p style={{ textAlign: `center` }}>Voir plus de projet selon le domaine que vous recherchez ?</p>
-          <div className={`${styles.link}`}><a href="/GaleriePage">Voir la galerie</a></div>
+          <div style={{padding:"10px"}}  className={`${styles.link}`}><a href="/GaleriePage">Voir la galerie</a></div>
         </section>
 
       </div>

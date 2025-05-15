@@ -307,6 +307,7 @@
 
 .searchBar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
     align-items: center;
@@ -334,5 +335,38 @@
     border-radius: 8px;
     border: 1px solid #ccc;
     min-height: 100px;
+  }
+  .sortControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .sortButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  
+    svg {
+      margin-left: 5px;
+    }
+  }
+  
+  .projectDate {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    opacity: 0.8;
   }
   
