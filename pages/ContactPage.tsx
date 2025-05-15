@@ -22,10 +22,7 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
         <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
         <div className={`${styles.Contact_container} ${styles.PresProj_Right}`} style={{ background: `#EFEFEF` }}>
           <h1>Contactez-moi dès maintenant !</h1>
-<<<<<<< HEAD
           
-
-=======
           <h2>Je suis toujours à la recherche de nouveaux défis !</h2>
           <div className={styles.socialLinks}>
             <a href="https://www.linkedin.com/in/noam-le-garsmeur-4b5003242" target="_blank" rel="noopener noreferrer">
@@ -37,7 +34,6 @@ const ContactPage: React.FC<ColorBackground> = ({ BackgroundFill }) => {
               <span>Instagram</span>
             </a>
           </div>
->>>>>>> 61430e19966327b9ee6f9e9e03128727f74a1d5e
           <div className={styles.text} style={{ display: `flex`, flexDirection: `column` }}>
             <p style={{ marginBottom: '0px' }}>
             Vous trouverez sûrement des informations qui vous intéresseront dans mon cv.
