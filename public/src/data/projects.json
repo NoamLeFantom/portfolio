@@ -1,178 +1,262 @@
 {
   "projet2": {
+    "date": "Janvier 2021",
     "titre": "Eiffel tower _",
-    "description": "I released this Eiffel Tower to test my knowledge and my determination.",
+    "description": "\tDans le cadre d'un projet de modding sur Arma 3, j'ai conçu cette <strong>Tour Eiffel</strong>, entièrement modélisée et texturée sur Blender. \nJ'ai également créé une version convexe de ce modèle. Les animations ont été réalisées en utilisant le moteur Arma 3, en intégrant des <strong>mémory et des config</strong>.",
     "details": [
       "3d",
-      "blender",
-      "modelling"
+      "Blender",
+      "Modelling"
     ],
     "images": [
-      "/uploads/Eiffel tower __1.png"
+      "/uploads/Eiffel tower __1.webp"
     ]
   },
   "projet3": {
+    "date": "Novembre 2022",
     "titre": "Cabourg city hall",
-    "description": "A model project for MetaverseGT.All process of creation was released on blender except foliage.",
+    "description": "\tUn projet de partenariat pour <strong>MetaverseGT</strong> en vu d'une  collaboration avec la <strong>Maison du Cinéma</strong> et la <strong>ville de Cabourg</strong>. Tout le processus de création a été réalisé sur Blender, à l'exception du feuillage, créé en partenariat avec Jomsims, voir [The Sims Resource](https://www.thesimsresource.com/artists/jomsims/)",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing",
-      "baking"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
+      "Baking"
     ],
     "images": [
-      "/uploads/Cabourg city hall_1.png"
+      "/uploads/Cabourg city hall_1.webp"
     ]
   },
   "projet4": {
+    "date": "Septembre 2022",
     "titre": "3D-2D alley draw",
-    "description": "For a challenge, I decide to represent an alley in atypical style for 3D creation.This style is in draw representation.",
+    "description": "\tLors d'un challenge 3D sur le thème <strong>\"Ruelle\"</strong>, organisé sur le serveur Discord de <strong>Charley3D</strong>, j'ai créé cet environnement dans un style atypique que je ne maîtrisais pas bien.\nCe projet a été réalisé exclusivement sur <strong>Blender</strong>.",
     "details": [
       "2d",
       "3d",
-      "blender",
-      "draw",
-      "lightning",
-      "modelling"
+      "Blender",
+      "Draw",
+      "Lightning",
+      "Modelling"
     ],
     "images": [
-      "/uploads/3D-2D alley draw_1.png"
+      "/uploads/3D-2D alley draw_1.webp"
     ]
   },
   "projet5": {
+    "date": "Août 2022",
     "titre": "Go to the depth of the ocean",
-    "description": "I don't know why, but I have looked to the sky, and I see the deeper of ocean.I decide to recreate this see with fauna and flora and a diver going deeper.",
+    "description": "\tCe projet a une connotation que je trouve assez poétique... Je ne sais pas pourquoi, mais en regardant le ciel et la cime de la fôret, j'ai vu les profondeurs de l'océan. J'ai alors décidé de recréer cette mer, avec sa faune et sa flore, et un plongeur qui s'enfonce dans les abysses.",
     "details": [
       "3d",
-      "blender"
+      "Blender",
+      "Lightning"
     ],
     "images": [
-      "/uploads/Go to the depth of the ocean_1.png"
+      "/uploads/Go to the depth of the ocean_1.webp"
     ]
   },
   "projet6": {
+    "date": "Août 2022",
     "titre": "Realistic 3D Sunset",
-    "description": "Inspired by a picture of sunset, I realized a scene with concrete and rock way.A realy hot sun be front of us and dazzle us.",
+    "description": "\tUn projet initialement inspiré par une simple balade à la plage. J'ai recréé une photo de coucher de soleil prise lors de cette occasion. Cette réalisation représente une scène avec un chemin de béton et de rochers, un soleil ardent devant nous qui nous éblouit, et la mer tout autour.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing"
     ],
     "images": [
-      "/uploads/Realistic 3D Sunset_1.png"
+      "/uploads/Realistic 3D Sunset_1.webp"
     ]
   },
   "projet7": {
-    "titre": "Veronoi picture Geonodes",
-    "description": "I used Geometry nodes of blender to creating veronoi modification.I can modify aspect of any image, the density (resolution) and the shape of veronoi effect.",
+    "date": "Octobre 2023",
+    "titre": "Veronoï painted picture Geonodes",
+    "description": "\tPour ce projet, j'ai utilisé les <strong>Geometry Nodes</strong> de <strong>Blender</strong> pour créer des effets de peinture basés sur le Voronoi. Une simple image d'entrée suffit ensuite pour ajuster la densité et l'effet Voronoi souhaité.\nPour information, la <strong>première image</strong> est la <strong>photo originale</strong>",
     "details": [
       "2d",
       "3d",
-      "blender",
-      "photography"
+      "Blender",
+      "Photography"
     ],
     "images": [
-      "/uploads/Veronoi picture Geonodes_1.png"
+      "/uploads/f54dc97bfedf1698736562f43bff1618.webp",
+      "/uploads/72af5556c5ee59d36dab26573b4853c9.webp",
+      "/uploads/d982a760669f5a6eb44d21330c479f2d.webp",
+      "/uploads/d45da0ddaeb4532876156f675b72af5b.webp",
+      "/uploads/5314715131074c18ab65c55363b2eb0b.webp",
+      "/uploads/8ab95fac3bf71704dcb97cdebee77567.webp",
+      "/uploads/edfb863521ac17b209e9d38cabdfe07a.webp"
     ]
   },
   "projet8": {
-    "titre": "Veronoi picture",
-    "description": "I used Substance Designer for creating veronoi modification and modified other parameter of image.",
+    "date": "Septembre 2023",
+    "titre": "Veronoï picture",
+    "description": "\tPour ce projet personnel, j'ai utilisé <strong>Substance Designer</strong> afin de m'essayer au logiciel. J'ai donc procédé à des modifications de <strong>Voronoi</strong> sur les différents contrastes.\nCe logiciel a l'air puissant, mais assez complexe à prendre en main. La première image est une photo afin de montrer la transformation effectuée sur les images suivantes.",
     "details": [
-      "photography"
+      "Photography",
+      "SubstanceDesigner"
     ],
     "images": [
-      "/uploads/Veronoi picture_1.png"
+      "/uploads/Veronoi picture_1.webp",
+      "/uploads/4a2564a4bc6da7b43a4f5fef09947cc7.webp"
     ]
   },
   "projet9": {
+    "date": "Fevrier 2023",
     "titre": "Forge Conquest Tower",
-    "description": "A student project made with students of Gaming Campus.\nLot of items was realesed by me and I have teached for many production during this period.\nI'm modeling and unwrapped it on blender, and texturing with Substance Painter.",
+    "description": "\tLors de ce projet étudiant réalisé avec des étudiants du <strong>Gaming Campus</strong>, j'ai eu l'opportunité de créer de nombreux éléments 3D et de partager beaucoup de connaissances durant cette période.\nJ'ai principalement utilisé <strong>Blender</strong> pour la modélisation et l'unwrap. En ce qui concerne les textures, je les ai réalisées avec <strong>Substance Painter</strong>.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing",
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
       "substancepainter"
     ],
     "images": [
-      "/uploads/Forge Conquest Tower_1.png"
+      "/uploads/Forge Conquest Tower_1.webp"
     ]
   },
   "projet10": {
+    "date": "Janvier 2023",
     "titre": "Daily Challenge Crabe",
-    "description": "I'have created a scene on the theme was crab.I have modeled all the scene and created a specific shader for volumetric effect.The time I have take was 8 hours.",
+    "description": "\tDans le cadre d'un défi consistant à modéliser un objet par jour, j'ai créé une petite scène sur le thème du crabe. J'ai donc modélisé ce dernier dans un environnement très simple.\nJ'ai souhaité jouer avec un effet de caustique en utilisant un shader volumétrique spécifique. Le temps de trouver l'idée et de réaliser cette scène, cela m'a pris environ 8 heures.",
     "details": [
       "3d",
-      "blender",
+      "Blender",
       "shading",
-      "lightning",
-      "modelling"
+      "Lightning",
+      "Modelling"
     ],
     "images": [
-      "/uploads/Daily Challenge Crabe_1.png"
+      "/uploads/Daily Challenge Crabe_1.gif"
     ]
   },
   "projet11": {
+    "date": "Octobre 2024",
     "titre": "Diorama",
-    "description": "This is a screen of a video diorama made during a school project in 3D.",
+    "description": "\tIl s'agit d'une capture d'écran d'un diorama vidéo réalisé dans le cadre d'un projet scolaire en 3D.\nLa partie la plus complexe a été de modéliser chaque élément puis de les texturer.\nJ'ai essayé de rendre cette scène, composée de nombreux objets, aussi vivante que possible.\nJ'ai beaucoup appris, notamment sur la composition et la gestion de mes lumières.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing"
     ],
     "images": [
-      "/uploads/Diorama_1.png"
+      "/uploads/Diorama_1.webp"
     ]
   },
   "projet12": {
+    "date": "Mars 2024",
     "titre": "Datalogy size type of way in Cotes d'Armor",
-    "description": "A project in which I wanted to represent all types of paths in the CÃ´tes d'Armor in France.This is a photograph of wool taking the form of different types of practices with the proportional size. I played with different orientations of lights to accentuate the colors.",
+    "description": "\tUn projet dans lequel j'ai voulu représenter tous les types de chemins présents dans les <strong>Côtes-d'Armor</strong>, en France.\nIl s'agit d'une photographie de laine prenant la forme de différents types de pratiques, avec des proportions respectées.\nJ'ai joué avec différentes orientations de lumière pour accentuer les couleurs.",
     "details": [
-      "photography"
+      "Photography"
     ],
     "images": [
-      "/uploads/Datalogy size type of way in Cotes d'Armor_1.png",
-      "/uploads/92d73622572ae67b69698eb3c5eeb433",
-      "/uploads/54397f2b472174ae9579876caaed83f6"
+      "/uploads/Datalogy size type of way in Cotes d'Armor_1.webp",
+      "/uploads/92d73622572ae67b69698eb3c5eeb433.webp",
+      "/uploads/54397f2b472174ae9579876caaed83f6.webp"
     ]
   },
   "projet13": {
+    "date": "Mai 2023",
     "titre": "Infographic Nautile Ifremer",
-    "description": "An infographic realesed on Nautile, scientifique submarine of IFREMER at Brest.\n\nI have created the 3D model of Nautile for have lot of control on the render, on the effect and many things.",
+    "description": "\tDans le cadre de la réalisation d’une infographie sur le thème des sous-marins de l’Ifremer, nous devions choisir un engin parmi l’ensemble de leur flotte.\nJ’ai donc choisi de réaliser mon infographie sur le <strong>Nautile</strong>, le seul sous-marin habitable de l’Ifremer.\nJ’ai opté pour une conception en 3D afin de mettre à l’épreuve mes compétences, notamment en modélisation et en rendu.\nCe projet m’a également permis d’explorer des notions clés en conception d’infographie, telles que l’agencement des différents éléments.",
     "details": [
       "3d",
-      "blender",
-      "lightning",
-      "modelling",
-      "texturing",
-      "compositing"
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
+      "Compositing"
     ],
     "images": [
-      "/uploads/52f7b214017d994ff24305f30bf042fd.png",
-      "/uploads/13c88e14a5f9c3810903b33d690121fa.png",
-      "/uploads/2e744a0a79e756af189f47a2d01b7ac5.png",
-      "/uploads/b9fc4f05c6434fc000154179b69b9781.png",
-      "/uploads/7388ab88c74be9d2b821ea5530bdfd03.png",
-      "/uploads/9318fc4971569af1e0dc2e8081390b08.png"
+      "/uploads/52f7b214017d994ff24305f30bf042fd.webp",
+      "/uploads/13c88e14a5f9c3810903b33d690121fa.webp",
+      "/uploads/2e744a0a79e756af189f47a2d01b7ac5.webp",
+      "/uploads/7388ab88c74be9d2b821ea5530bdfd03.webp",
+      "/uploads/9318fc4971569af1e0dc2e8081390b08.webp",
+      "/uploads/Nautile.gif"
     ]
   },
   "projet14": {
+    "date": "Fevrier 2025",
     "titre": "FX Davinci Resolve",
-    "description": "During my work-study program, I worked on a number of transitions and text animations using the nodal fusion compositing system,  I wanted to make them parameterizable so that I could reuse them without having to modify the nodal system. The most complicated part was organizing the control panels, since it is necessary to enter the generated file with a text editor. The basic code is a congener of lua.",
+    "description": "\tLors de mon alternance, j'ai travaillé sur un certain nombre de transitions et d'animations de texte en utilisant le système de <strong>Compositing nodal Fusion</strong>.\nJ'ai voulu les rendre paramétrables afin de pouvoir les réutiliser sans avoir à modifier le système nodal.\nLe plus compliqué a été d'organiser les panneaux de contrôle, car il est nécessaire d'entrer dans le fichier généré avec un éditeur de texte.\nLe code de base est un dérivé du langage <strong>Lua</strong>.",
     "details": [
       "video",
       "2d",
-      "lua",
-      "davinciR"
+      "Lua",
+      "DavinciResolve"
     ],
-    "images": ["/uploads/FX Davinci Resolve.png"]
+    "images": [
+      "/uploads/MotionLVEL.gif",
+      "/uploads/Motion.webp",
+      "/uploads/Motion2.webp"
+    ]
+  },
+  "projet15": {
+    "date": "Fevrier 2025",
+    "titre": "Cadreur / Monteur TedX Lannion 2025",
+    "description": "\tLe 7 février 2025 se tenait un événement <strong>TedX</strong> à Lannion, au <strong>Carré Magique</strong>. Cela a été une captation de 2h30 durant laquelle j'ai pu capturer les coulisses du spectacle.\nJ'ai néanmoins pris part aux deux jours de préparation précédant la représentation. Nous avons préparé les différentes caméras et mis en place un dispositif complet afin de transmettre également l'événement en coulisse, tout en aidant les différentes équipes selon leurs besoins.\nÊtre force de proposition et de conseils a été un grand atout dans la préparation de cet événement.\nEn amont du spectacle, nous avons commencé à préparer cette captation dès novembre 2024, en recherchant des bénévoles, des partenaires et du matériel.\nEn aval de la captation, j'ai également participé aux montages vidéo des différents talks et de l'after-movie.",
+    "details": [
+      "Video",
+      "DavinciResolve"
+    ],
+    "images": [
+      "/uploads/4e2b76a695c7abc4bc38ca32b6d64176.webp",
+      "/uploads/1ae3eb9919b3b8b1d1df163d49c5a4f4.webp"
+    ]
+  },
+  "projet16": {
+    "date": "Janvier 2025",
+    "titre": "Carte de luminosoté sur un film",
+    "description": "\tUn soir, je me suis demandé ce qu'il se passerait si l'on venait à cumuler les images d'un film. J'ai commencé par essayer de séparer et d'extraire les composantes <strong>RGB</strong> de chaque frame et de cumuler ces dernières en des cartes noires et blanches.\nEn assemblant ces différentes cartes, j'ai trouvé un résultat très intéressant qui répondait à ma question : <em>Quel pixel affiche quelle couleur en majorité sur le film ?</em>",
+    "details": [
+      "Video",
+      "DavinciResolve"
+    ],
+    "images": [
+      "/uploads/t1_LaHautCombined.webp",
+      "/uploads/t2_LaHautRed.webp",
+      "/uploads/t3_LaHautGreen.webp",
+      "/uploads/t4_LaHautBlue.webp",
+      "/uploads/t5_The_Hunger_Games_(2012)Combined.webp",
+      "/uploads/t6_The_Hunger_Games_(2013)Combined.webp",
+      "/uploads/t7_The_Hunger_Games_(2014)Combined.webp",
+      "/uploads/t8_The_Hunger_Games_(2015)Combined.webp",
+      "/uploads/t45_GhostInTheShellCombined.webp"
+    ]
+  },
+  "projet17": {
+    "date": "Fevrier 2023",
+    "titre": "Folliage Conquest Tower",
+    "description": "\tLors de ce projet étudiant réalisé avec des étudiants du <strong>Gaming Campus</strong>, j'ai eu l'opportunité de créer de nombreux éléments 3D et de partager beaucoup de connaissances durant cette période.\nJ'ai principalement utilisé <strong>Blender</strong> pour la modélisation et l'unwrap. En ce qui concerne les textures, je les ai réalisées avec <strong>Substance Painter</strong>.",
+    "details": [
+      "3d",
+      "Blender",
+      "Lightning",
+      "Modelling",
+      "Texturing",
+      "substancepainter"
+    ],
+    "images": [
+      "/uploads/folliage1.webp",
+      "/uploads/folliage2.webp",
+      "/uploads/folliage3.webp",
+      "/uploads/folliage4.webp",
+      "/uploads/folliage5.webp",
+      "/uploads/folliage6.webp",
+      "/uploads/folliage7.webp",
+      "/uploads/folliage8.webp",
+      "/uploads/folliage.webp"
+
+    ]
   }
 }

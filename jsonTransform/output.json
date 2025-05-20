@@ -1,0 +1,835 @@
+{
+  "nodes": [
+    {
+      "id": "Audit de communication numérique",
+      "group": 1
+    },
+    {
+      "id": "Auditer une communication numérique",
+      "group": 1
+    },
+    {
+      "id": "audit",
+      "group": 1
+    },
+    {
+      "id": "ergonomie",
+      "group": 1
+    },
+    {
+      "id": "sémiotique",
+      "group": 1
+    },
+    {
+      "id": "statistiques",
+      "group": 1
+    },
+    {
+      "id": "analyse",
+      "group": 1
+    },
+    {
+      "id": "communication",
+      "group": 1
+    },
+    {
+      "id": "Communication numérique et marketing",
+      "group": 2
+    },
+    {
+      "id": "Concevoir une recommandation de communication numérique",
+      "group": 2
+    },
+    {
+      "id": "stratégie de communication",
+      "group": 2
+    },
+    {
+      "id": "marketing",
+      "group": 2
+    },
+    {
+      "id": "langues",
+      "group": 2
+    },
+    {
+      "id": "adaptation culturelle",
+      "group": 2
+    },
+    {
+      "id": "plan de communication",
+      "group": 2
+    },
+    {
+      "id": "présentation",
+      "group": 2
+    },
+    {
+      "id": "Communication visuelle et graphisme",
+      "group": 3
+    },
+    {
+      "id": "Produire les éléments d’une communication visuelle",
+      "group": 3
+    },
+    {
+      "id": "culture artistique",
+      "group": 3
+    },
+    {
+      "id": "production graphique",
+      "group": 3
+    },
+    {
+      "id": "croquis",
+      "group": 3
+    },
+    {
+      "id": "inspiration",
+      "group": 3
+    },
+    {
+      "id": "optimisation",
+      "group": 3
+    },
+    {
+      "id": "présentation client",
+      "group": 3
+    },
+    {
+      "id": "Production audio et vidéo",
+      "group": 4
+    },
+    {
+      "id": "Produire un contenu audio et vidéo",
+      "group": 4
+    },
+    {
+      "id": "narration",
+      "group": 4
+    },
+    {
+      "id": "production audiovisuelle",
+      "group": 4
+    },
+    {
+      "id": "montage vidéo",
+      "group": 4
+    },
+    {
+      "id": "voix-off",
+      "group": 4
+    },
+    {
+      "id": "sous-titrage",
+      "group": 4
+    },
+    {
+      "id": "adaptation internationale",
+      "group": 4
+    },
+    {
+      "id": "Développement Web",
+      "group": 5
+    },
+    {
+      "id": "Produire un site Web",
+      "group": 5
+    },
+    {
+      "id": "développement",
+      "group": 5
+    },
+    {
+      "id": "intégration",
+      "group": 5
+    },
+    {
+      "id": "normes W3C",
+      "group": 5
+    },
+    {
+      "id": "hébergement",
+      "group": 5
+    },
+    {
+      "id": "Gestion de projet",
+      "group": 6
+    },
+    {
+      "id": "Gérer un projet de communication numérique",
+      "group": 6
+    },
+    {
+      "id": "gestion de projet",
+      "group": 6
+    },
+    {
+      "id": "planification",
+      "group": 6
+    },
+    {
+      "id": "communication internationale",
+      "group": 6
+    },
+    {
+      "id": "budget",
+      "group": 6
+    },
+    {
+      "id": "Anglais",
+      "group": 7
+    },
+    {
+      "id": "Ressource R1.01 : Anglais",
+      "group": 7
+    },
+    {
+      "id": "proposition marketing",
+      "group": 7
+    },
+    {
+      "id": "communication orale",
+      "group": 7
+    },
+    {
+      "id": "anglais professionnel",
+      "group": 7
+    },
+    {
+      "id": "Ergonomie et Accessibilité",
+      "group": 8
+    },
+    {
+      "id": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "group": 8
+    },
+    {
+      "id": "ergonomie",
+      "group": 8
+    },
+    {
+      "id": "utilisateur",
+      "group": 8
+    },
+    {
+      "id": "audit",
+      "group": 8
+    },
+    {
+      "id": "accessibilité",
+      "group": 8
+    },
+    {
+      "id": "interface",
+      "group": 8
+    },
+    {
+      "id": "Culture numérique",
+      "group": 9
+    },
+    {
+      "id": "Ressource R1.04 : Culture numérique",
+      "group": 9
+    },
+    {
+      "id": "internet",
+      "group": 9
+    },
+    {
+      "id": "usages numériques",
+      "group": 9
+    },
+    {
+      "id": "sociologie des médias",
+      "group": 9
+    },
+    {
+      "id": "Stratégies de communication et marketing",
+      "group": 10
+    },
+    {
+      "id": "Ressource R1.05 : Stratégies de communication et marketing",
+      "group": 10
+    },
+    {
+      "id": "marketing",
+      "group": 10
+    },
+    {
+      "id": "marketing digital",
+      "group": 10
+    },
+    {
+      "id": "analyse des médias",
+      "group": 10
+    },
+    {
+      "id": "Expression, communication et rhétorique",
+      "group": 11
+    },
+    {
+      "id": "Ressource R1.06 : Expression, communication et rhétorique",
+      "group": 11
+    },
+    {
+      "id": "expression-communication",
+      "group": 11
+    },
+    {
+      "id": "structuration du discours",
+      "group": 11
+    },
+    {
+      "id": "Écriture multimédia et narration",
+      "group": 12
+    },
+    {
+      "id": "Ressource R1.07 : Écriture multimédia et narration",
+      "group": 12
+    },
+    {
+      "id": "écriture et narration",
+      "group": 12
+    },
+    {
+      "id": "story-board",
+      "group": 12
+    },
+    {
+      "id": "script",
+      "group": 12
+    },
+    {
+      "id": "interview",
+      "group": 12
+    },
+    {
+      "id": "Production graphique",
+      "group": 13
+    },
+    {
+      "id": "Ressource R1.08 : Production graphique",
+      "group": 13
+    },
+    {
+      "id": "infographie",
+      "group": 13
+    },
+    {
+      "id": "retouche photo",
+      "group": 13
+    },
+    {
+      "id": "composition",
+      "group": 13
+    },
+    {
+      "id": "Culture artistique",
+      "group": 14
+    },
+    {
+      "id": "Ressource R1.09 : Culture artistique",
+      "group": 14
+    },
+    {
+      "id": "langage visuel",
+      "group": 14
+    },
+    {
+      "id": "créativité",
+      "group": 14
+    },
+    {
+      "id": "arts plastiques",
+      "group": 14
+    },
+    {
+      "id": "Production audio et vidéo",
+      "group": 15
+    },
+    {
+      "id": "Ressource R1.10 : Production audio et vidéo",
+      "group": 15
+    },
+    {
+      "id": "prise de vues",
+      "group": 15
+    },
+    {
+      "id": "prise de son",
+      "group": 15
+    },
+    {
+      "id": "montage",
+      "group": 15
+    },
+    {
+      "id": "cadrage",
+      "group": 15
+    },
+    {
+      "id": "lumière",
+      "group": 15
+    },
+    {
+      "id": "Intégration",
+      "group": 16
+    },
+    {
+      "id": "Ressource R1.11 : Intégration",
+      "group": 16
+    },
+    {
+      "id": "intégration",
+      "group": 16
+    },
+    {
+      "id": "sémantique",
+      "group": 16
+    },
+    {
+      "id": "accessibilité",
+      "group": 16
+    },
+    {
+      "id": "mise en forme",
+      "group": 16
+    },
+    {
+      "id": "inspection",
+      "group": 16
+    },
+    {
+      "id": "validation",
+      "group": 16
+    }
+  ],
+  "links": [
+    {
+      "source": "Auditer une communication numérique",
+      "target": "Audit de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "audit",
+      "target": "Auditer une communication numérique",
+      "value": 1
+    },
+    {
+      "source": "ergonomie",
+      "target": "Auditer une communication numérique",
+      "value": 1
+    },
+    {
+      "source": "sémiotique",
+      "target": "Auditer une communication numérique",
+      "value": 1
+    },
+    {
+      "source": "statistiques",
+      "target": "Auditer une communication numérique",
+      "value": 1
+    },
+    {
+      "source": "analyse",
+      "target": "Auditer une communication numérique",
+      "value": 1
+    },
+    {
+      "source": "communication",
+      "target": "Auditer une communication numérique",
+      "value": 1
+    },
+    {
+      "source": "Concevoir une recommandation de communication numérique",
+      "target": "Communication numérique et marketing",
+      "value": 1
+    },
+    {
+      "source": "stratégie de communication",
+      "target": "Concevoir une recommandation de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "marketing",
+      "target": "Concevoir une recommandation de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "langues",
+      "target": "Concevoir une recommandation de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "adaptation culturelle",
+      "target": "Concevoir une recommandation de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "plan de communication",
+      "target": "Concevoir une recommandation de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "présentation",
+      "target": "Concevoir une recommandation de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "Produire les éléments d’une communication visuelle",
+      "target": "Communication visuelle et graphisme",
+      "value": 1
+    },
+    {
+      "source": "culture artistique",
+      "target": "Produire les éléments d’une communication visuelle",
+      "value": 1
+    },
+    {
+      "source": "production graphique",
+      "target": "Produire les éléments d’une communication visuelle",
+      "value": 1
+    },
+    {
+      "source": "croquis",
+      "target": "Produire les éléments d’une communication visuelle",
+      "value": 1
+    },
+    {
+      "source": "inspiration",
+      "target": "Produire les éléments d’une communication visuelle",
+      "value": 1
+    },
+    {
+      "source": "optimisation",
+      "target": "Produire les éléments d’une communication visuelle",
+      "value": 1
+    },
+    {
+      "source": "présentation client",
+      "target": "Produire les éléments d’une communication visuelle",
+      "value": 1
+    },
+    {
+      "source": "Produire un contenu audio et vidéo",
+      "target": "Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "narration",
+      "target": "Produire un contenu audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "production audiovisuelle",
+      "target": "Produire un contenu audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "montage vidéo",
+      "target": "Produire un contenu audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "voix-off",
+      "target": "Produire un contenu audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "sous-titrage",
+      "target": "Produire un contenu audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "adaptation internationale",
+      "target": "Produire un contenu audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "Produire un site Web",
+      "target": "Développement Web",
+      "value": 1
+    },
+    {
+      "source": "développement",
+      "target": "Produire un site Web",
+      "value": 1
+    },
+    {
+      "source": "intégration",
+      "target": "Produire un site Web",
+      "value": 1
+    },
+    {
+      "source": "normes W3C",
+      "target": "Produire un site Web",
+      "value": 1
+    },
+    {
+      "source": "hébergement",
+      "target": "Produire un site Web",
+      "value": 1
+    },
+    {
+      "source": "Gérer un projet de communication numérique",
+      "target": "Gestion de projet",
+      "value": 1
+    },
+    {
+      "source": "gestion de projet",
+      "target": "Gérer un projet de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "planification",
+      "target": "Gérer un projet de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "communication internationale",
+      "target": "Gérer un projet de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "budget",
+      "target": "Gérer un projet de communication numérique",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.01 : Anglais",
+      "target": "Anglais",
+      "value": 1
+    },
+    {
+      "source": "proposition marketing",
+      "target": "Ressource R1.01 : Anglais",
+      "value": 1
+    },
+    {
+      "source": "communication orale",
+      "target": "Ressource R1.01 : Anglais",
+      "value": 1
+    },
+    {
+      "source": "anglais professionnel",
+      "target": "Ressource R1.01 : Anglais",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "target": "Ergonomie et Accessibilité",
+      "value": 1
+    },
+    {
+      "source": "ergonomie",
+      "target": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "value": 1
+    },
+    {
+      "source": "utilisateur",
+      "target": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "value": 1
+    },
+    {
+      "source": "audit",
+      "target": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "value": 1
+    },
+    {
+      "source": "accessibilité",
+      "target": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "value": 1
+    },
+    {
+      "source": "interface",
+      "target": "Ressource R1.03 : Ergonomie et Accessibilité",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.04 : Culture numérique",
+      "target": "Culture numérique",
+      "value": 1
+    },
+    {
+      "source": "internet",
+      "target": "Ressource R1.04 : Culture numérique",
+      "value": 1
+    },
+    {
+      "source": "usages numériques",
+      "target": "Ressource R1.04 : Culture numérique",
+      "value": 1
+    },
+    {
+      "source": "sociologie des médias",
+      "target": "Ressource R1.04 : Culture numérique",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.05 : Stratégies de communication et marketing",
+      "target": "Stratégies de communication et marketing",
+      "value": 1
+    },
+    {
+      "source": "marketing",
+      "target": "Ressource R1.05 : Stratégies de communication et marketing",
+      "value": 1
+    },
+    {
+      "source": "marketing digital",
+      "target": "Ressource R1.05 : Stratégies de communication et marketing",
+      "value": 1
+    },
+    {
+      "source": "analyse des médias",
+      "target": "Ressource R1.05 : Stratégies de communication et marketing",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.06 : Expression, communication et rhétorique",
+      "target": "Expression, communication et rhétorique",
+      "value": 1
+    },
+    {
+      "source": "expression-communication",
+      "target": "Ressource R1.06 : Expression, communication et rhétorique",
+      "value": 1
+    },
+    {
+      "source": "structuration du discours",
+      "target": "Ressource R1.06 : Expression, communication et rhétorique",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.07 : Écriture multimédia et narration",
+      "target": "Écriture multimédia et narration",
+      "value": 1
+    },
+    {
+      "source": "écriture et narration",
+      "target": "Ressource R1.07 : Écriture multimédia et narration",
+      "value": 1
+    },
+    {
+      "source": "story-board",
+      "target": "Ressource R1.07 : Écriture multimédia et narration",
+      "value": 1
+    },
+    {
+      "source": "script",
+      "target": "Ressource R1.07 : Écriture multimédia et narration",
+      "value": 1
+    },
+    {
+      "source": "interview",
+      "target": "Ressource R1.07 : Écriture multimédia et narration",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.08 : Production graphique",
+      "target": "Production graphique",
+      "value": 1
+    },
+    {
+      "source": "infographie",
+      "target": "Ressource R1.08 : Production graphique",
+      "value": 1
+    },
+    {
+      "source": "retouche photo",
+      "target": "Ressource R1.08 : Production graphique",
+      "value": 1
+    },
+    {
+      "source": "composition",
+      "target": "Ressource R1.08 : Production graphique",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.09 : Culture artistique",
+      "target": "Culture artistique",
+      "value": 1
+    },
+    {
+      "source": "langage visuel",
+      "target": "Ressource R1.09 : Culture artistique",
+      "value": 1
+    },
+    {
+      "source": "créativité",
+      "target": "Ressource R1.09 : Culture artistique",
+      "value": 1
+    },
+    {
+      "source": "arts plastiques",
+      "target": "Ressource R1.09 : Culture artistique",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.10 : Production audio et vidéo",
+      "target": "Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "prise de vues",
+      "target": "Ressource R1.10 : Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "prise de son",
+      "target": "Ressource R1.10 : Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "montage",
+      "target": "Ressource R1.10 : Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "cadrage",
+      "target": "Ressource R1.10 : Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "lumière",
+      "target": "Ressource R1.10 : Production audio et vidéo",
+      "value": 1
+    },
+    {
+      "source": "Ressource R1.11 : Intégration",
+      "target": "Intégration",
+      "value": 1
+    },
+    {
+      "source": "intégration",
+      "target": "Ressource R1.11 : Intégration",
+      "value": 1
+    },
+    {
+      "source": "sémantique",
+      "target": "Ressource R1.11 : Intégration",
+      "value": 1
+    },
+    {
+      "source": "accessibilité",
+      "target": "Ressource R1.11 : Intégration",
+      "value": 1
+    },
+    {
+      "source": "mise en forme",
+      "target": "Ressource R1.11 : Intégration",
+      "value": 1
+    },
+    {
+      "source": "inspection",
+      "target": "Ressource R1.11 : Intégration",
+      "value": 1
+    },
+    {
+      "source": "validation",
+      "target": "Ressource R1.11 : Intégration",
+      "value": 1
+    }
+  ]
+}

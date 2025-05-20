@@ -1,0 +1,44 @@
+{
+    "intro": {
+        "file": "videos/vid1.mp4",
+        "choices": [
+            {
+                "label": "Aller à la plage",
+                "next": "plage"
+            },
+            {
+                "label": "Aller en forêt",
+                "next": "foret"
+            },
+            {
+                "label": "Je ne sais pas",
+                "next": "jsp"
+            }
+        ],
+        "timeToChoose": 8
+    },
+    "plage": {
+        "file": "videos/vid2.mp4",
+        "choices": [
+            {
+                "label": "Faire un château de sable",
+                "next": "foret"
+            },
+            {
+                "label": "Aller nager",
+                "next": "jsp"
+            }
+        ],
+        "timeToChoose": 2
+    },
+    "foret": {
+        "file": "videos/vid3.mp4",
+        "choices": [],
+        "timeToChoose": null
+    },
+    "jsp": {
+        "file": "videos/vid4.mp4",
+        "choices": [],
+        "timeToChoose": null
+    }
+}

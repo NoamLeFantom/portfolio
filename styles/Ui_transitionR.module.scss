@@ -1,7 +1,6 @@
 .transition_ui {
-    background: #3b5963;
+    background: #d7d7d7;
     width: 100%;
-
     svg {
         display: block;
         width: 100%; // le SVG prend 100% de la largeur de l'écran
@@ -10,7 +9,5 @@
 
     @media screen and (min-width: 1024px) {
         grid-column: 1/3;
-
     }
 }
-

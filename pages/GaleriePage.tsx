@@ -1,0 +1,31 @@
+import React, { useEffect, useState } from "react";
+import Header from "../components/Header";
+import Gallery from "../components/Gallery";
+import Ui_transitionR from "../components/Ui_transitionR";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+
+type ColorBackground = {
+  BackgroundFill?: string;
+};
+
+const GalerieP: React.FC<ColorBackground> = ({ BackgroundFill }) => {
+  useEffect(() => {
+    document.title = "noamlg-Gallerie";
+  }, []); // Le titre sera défini quand le composant est monté
+
+  return (
+    <section style={{ background: `${BackgroundFill}` }} >
+      <Header BackgroundFill={"#EA5930"} />
+      <main>
+        <Ui_transitionR className={"Left"} BackgroundShapeFill={"#EA5930"} BackgroundFill={"#EFEFEF"} />
+        <Gallery BackgroundFill={"#efefef"} />
+      </main>
+      <Ui_transitionR className={""} BackgroundShapeFill={"#EFEFEF"} BackgroundFill={"#EA5930"} />
+      <Analytics /><SpeedInsights />
+    </section>
+  );
+};
+
+export default GalerieP;

@@ -1,12 +1,100 @@
 {
   "2022": [
-    { "date": "2022-09-02", "titre": "Starting MMI", "description": "Join the MMI program at Lannion University" },
-    { "date": "2022-07-02", "titre": "3D artist MétaverseGT", "description": "Worked at Metaverse GT like 3D artist for 6 mounth \n test de retour à la ligne" },
-    { "date": "2022-07-01", "titre": "Baccalauréat", "description": "Graduating with my STI2D diploma" },
-    { "date": "2022-02-18", "titre": "Ostréicultur", "description": "Working in an oyster farm for two weeks" }
+    {
+      "date": "2023-12-08",
+      "titre": "Présentation de la formation MMI à Sup'Armor",
+      "duree": "",
+      "description": "Représentation de l'IUT de Lannion et de la formation MMI lors du salon Sup'Armor à Saint-Brieuc."
+    },
+    {
+      "date": "2022-09-02",
+      "titre": "Formation MMI",
+      "duree": "3 ans",
+      "description": "Début de ma première année en formation MMI au sein de l'IUT de Lannion"
+    },
+    {
+      "date": "2022-07-02",
+      "titre": "3D artist MétaverseGT",
+      "duree": "5 mois",
+      "description": "J'ai travaillé en tant que concepteur 3D sur de nombreux projets"
+    },
+    {
+      "date": "2022-07-01",
+      "titre": "Baccalauréat",
+      "duree": "",
+      "description": "Obtention du baccalauréat STI2D spécialité SIN"
+    },
+    {
+      "date": "2022-02-18",
+      "titre": "Ostréicultur",
+      "duree": "2 semaine",
+      "description": "Première expérience professionnelle en tant qu'ostréiculteur"
+    }
   ],
   "2023": [
-    { "date": "2023-03-05", "titre": "Event 3", "description": "Launched my first app." },
-    { "date": "2023-09-20", "titre": "Event 4", "description": "Joined a React development team." }
+    {
+      "date": "2023-12-14",
+      "titre": "Présentation de la formation MMI à Sup'Armor",
+      "duree": "",
+      "description": "Représentation de l'IUT de Lannion et de la formation MMI lors du salon Sup'Armor à Saint-Brieuc."
+    },
+    {
+      "date": "2023-09-16",
+      "titre": "Organisation vide-grenier des Rosaire",
+      "duree": "",
+      "description": "Organisation du vide-grenier des Rosaires en tant que bénévole actif."
+    },
+    {
+      "date": "2023-09-02",
+      "titre": "Alternance DSI Cooperl",
+      "duree": "2 ans",
+      "description": "Début de mon alternance en tant que chargé de communication à la DSI de chez Cooperl"
+    },
+    {
+      "date": "2023-03-04",
+      "titre": "Présentation de la formation MMI",
+      "duree": "",
+      "description": "Présentation la formation au journée porte ouverte de l'IUT de Lannion."
+    }
+  ],
+  "2024": [
+    {
+      "date": "2024-12-12",
+      "titre": "Présentation de la formation MMI à Sup'Armor",
+      "duree": "",
+      "description": "Représentation de l'IUT de Lannion et de la formation MMI lors du salon Sup'Armor à Saint-Brieuc."
+    },
+    {
+      "date": "2024-09-12",
+      "titre": "Organisation vide grenier des Rosaire",
+      "duree": "",
+      "description": "Organisation du vide-grenier des Rosaires en tant que bénévole actif."
+    },
+    {
+      "date": "2024-03-08",
+      "titre": "Présentation de la formation MMI ",
+      "duree": "",
+      "description": "Présentation la formation au journée porte ouverte de l'IUT de Lannion."
+    }
+  ],
+  "2025": [
+    {
+      "date": "...",
+      "titre": "Nos futurs sont peut-être liés !?",
+      "duree": "",
+      "description": "..."
+    },
+    {
+      "date": "2025-03-08",
+      "titre": "Présentation de la formation MMI ",
+      "duree": "",
+      "description": "Présentation la formation au journée porte ouverte de l'IUT de Lannion."
+    },
+    {
+      "date": "2025-02-06",
+      "titre": "Cadreur / Monteur TEDx Lannion 2025",
+      "duree": "",
+      "description": "Captation de l'événement et montage des talks lors du TEDx Lannion 2025 au Carré Magique."
+    }
   ]
 }

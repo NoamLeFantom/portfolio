@@ -1,0 +1,605 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.feuille {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  width: 404px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header + div {
+  padding-top: 6rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.basic_Information-Container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.iut_universite_logos-container {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+}
+.iut_universite_logos-container img {
+  width: auto;
+  height: 4.5rem;
+}
+.iut_universite_logos-container .imgRennes {
+  width: 8rem;
+}
+
+hr {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 0.05rem;
+  margin: 0.15rem;
+}
+
+.liste-competences-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.list {
+  padding: 0.2rem;
+  height: auto;
+  font-size: 0.5rem;
+}
+
+.comprendre {
+  background-color: rgb(238, 131, 131);
+  color: rgb(0, 0, 0);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.concevoir {
+  background-color: rgb(255, 172, 77);
+  color: rgb(0, 0, 0);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.exprimer {
+  background-color: rgb(241, 241, 106);
+  color: rgb(0, 0, 0);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.developper {
+  background-color: rgb(172, 255, 184);
+  color: rgb(0, 0, 0);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.entreprendre {
+  background-color: rgb(165, 197, 255);
+  color: rgb(0, 0, 0);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.illu_comp {
+  display: flex;
+  flex-direction: row;
+}
+
+.illuProjet {
+  display: flex;
+  width: 50%;
+  max-height: 130px;
+}
+.illuProjet img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 100% 0;
+  object-position: 100% 0;
+}
+
+.comp_print {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  max-height: 130px;
+}
+
+.expliContainer {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.innerExplic {
+  display: flex;
+  width: 50%;
+  align-self: center;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-style: none;
+}
+
+.form_champ {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 5rem;
+}
+form * {
+  font-size: 1.5rem;
+}
+form .ressourcefield {
+  display: flex;
+  flex-direction: column;
+}
+form .flexRow-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #264653;
+  color: #fefbf4;
+  width: 100%;
+  padding: 0.5em 0;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form .flexRow-3 div {
+  display: flex;
+  flex-direction: column;
+}
+form .flexRow-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form .flexRow-2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+body {
+  background-color: #fefbf4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+label {
+  font-size: 1.5rem;
+  padding: 10px;
+  font-family: "DM Serif Display", serif;
+}
+
+input {
+  border-radius: 10px;
+  text-align: center;
+}
+
+select {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.autoeval {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: #e0bbcd;
+  border-width: 2px;
+  border-style: double;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.autoeval div {
+  width: 100%;
+}
+.autoeval div h1 {
+  background-color: #e0bbcd;
+  color: #fefbf4;
+  width: 100%;
+}
+.autoeval .flexRow-2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border: #e0bbcd;
+  border-bottom: double;
+  border-width: 1px;
+  width: 60%;
+}
+.autoeval .flexRow-2:last-child {
+  border-style: none;
+}
+
+#intro {
+  text-align: center;
+  padding: 50px 20px;
+  padding-top: 6rem;
+}
+#intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-family: "DM Serif Display", serif;
+}
+#intro p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 20px;
+}
+#services h3 {
+  margin-bottom: 15px;
+  font-family: "DM Serif Display", serif;
+  text-align: left;
+  width: 100%;
+}
+#services p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+#services button {
+  text-align: center;
+  align-items: center;
+  background-color: #fefbf4;
+  color: #555;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "DM Serif Display", serif;
+}
+#services button:hover {
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fefbf4;
+  cursor: pointer;
+  font-family: "DM Serif Display", serif;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+  margin: 1rem;
+}
+
+#about {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+#about h2 {
+  margin-bottom: 20px;
+  font-family: "DM Serif Display", serif;
+}
+#about p {
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #fefbf4;
+  color: #e49c23;
+  border: 2px #e49c23;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "DM Serif Display", serif;
+  margin: 10px;
+}
+button:hover {
+  background-color: #e49c23;
+  color: #fefbf4;
+  font-family: "DM Serif Display", serif;
+}
+
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "DM Serif Display", serif;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  #services h3 {
+    width: 55%;
+    margin-right: 10px;
+  }
+  .service {
+    display: flex;
+    flex-direction: row;
+  }
+  form .flexRow-2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    white-space: nowrap;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  form label {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  form .flexRow-2 div:nth-child(2n+1) {
+    grid-column: 1/2;
+  }
+  form .flexRow-2 div:nth-child(1n+2) {
+    grid-column: 2/3;
+  }
+  form .flexRow-2 div:nth-child(1n+2) input {
+    width: 100%;
+  }
+  form .flexRow-2 div input {
+    width: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 20px;
+  }
+  #services h3 {
+    text-align: center;
+    width: 100%;
+    margin-right: 0px;
+  }
+  #services p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+  }
+  form .flexRow-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  form .flexRow-3 div {
+    display: flex;
+    flex-direction: row;
+  }
+  form .flexRow-3 div input {
+    width: 100%;
+  }
+  form .flexRow-3 div:first-child input {
+    width: 30%;
+  }
+  form .flexRow-3 div .form_champ {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+.container_menuBurger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 131, 131);
+}
+
+.menuItem {
+  margin: 2rem 3rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background: none;
+  font-family: "Rubik Regular";
+}
+
+.hamburger {
+  position: relative;
+  z-index: 100;
+  margin-top: 10px;
+  padding: 0.25rem;
+  border-style: none;
+  background: none;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgb(238, 131, 131);
+  width: 100%;
+}
+.menu ul {
+  list-style: none;
+  width: 100%;
+  justify-content: flex-end;
+}
+.menu li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.menu li:hover {
+  background-color: #FFFFFF;
+}
+.menu a {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.menu a span {
+  padding: 1rem;
+}
+
+.ic_menu_none_visibility {
+  display: none;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 1024px) {
+  .container_menuBurger {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    padding-top: 0px;
+  }
+  .container_menuBurger li:last-child {
+    margin-top: auto;
+  }
+  .container_menuBurger span {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    transform: translateY(0);
+    z-index: 100;
+  }
+  .menu .menuItem {
+    margin: 32px 0px;
+  }
+  .menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .menu a {
+    padding: 0;
+    flex-direction: column;
+  }
+  .menu a span {
+    display: flex;
+    visibility: hidden;
+    padding: 0px;
+    text-align: center;
+    font-size: 0.77rem;
+    color: #7058FF;
+  }
+  .menu a:hover span {
+    visibility: visible;
+  }
+  .menu li:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .hamburger {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
