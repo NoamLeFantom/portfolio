@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+téimport React, { useState, useEffect } from "react";
 import styles from "../styles/HP_Presentation.module.scss";
 
 type ColorBackground = {
   BackgroundFill?: string;
 };
 
-const mots1 = ["créatif", "organisé", "rigoureux"];
+const mots1 = ["Augmentée", "Virtuelle", "Mixte"];
 
 const HP_Top: React.FC<ColorBackground> = ({ BackgroundFill }) => {
   const [index1, setIndex1] = useState(0);
@@ -39,7 +39,7 @@ const HP_Top: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       />
       <div className={styles.text}>
         <p>
-          Je suis{" "}
+          Recherche une alternance en Réalité {" "}
           <span
             className={`${styles.changingWord} ${fade ? styles.fadeOut : ""}`}
           >
