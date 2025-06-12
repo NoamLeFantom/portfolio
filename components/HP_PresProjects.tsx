@@ -12,7 +12,7 @@ const HP_PresProjects: React.FC<ColorBackground> = ({ BackgroundFill }) => {
       <div style={{ background: `${BackgroundFill}` }}>
         <section className={`${styles.HP_PresProjects_container} ${styles.PresProj_Right}`} style={{ background: `${BackgroundFill}` }} >
           <h2>Journée du crime et de la science, dispositif interactif</h2>
-          <iframe className={styles.HP_mediaContent} width="560" height="315" src="https://www.youtube.com/embed/QBAhmnab_c0?si=8akSpXDlIxgXfadc&amp;start=32" title="Journée crime et science France 3 Bretagne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe className={styles.HP_mediaContent} src="https://www.youtube.com/embed/QBAhmnab_c0?si=8akSpXDlIxgXfadc&amp;start=32" title="Journée crime et science France 3 Bretagne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div className={styles.text}>
             <p>
               Les 23, 24 et 25 mai, se déroulait les journées du crime et de la science à Ploeumeur-Bodou.
