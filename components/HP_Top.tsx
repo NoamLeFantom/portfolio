@@ -1,4 +1,4 @@
-téimport React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/HP_Presentation.module.scss";
 
 type ColorBackground = {
