@@ -235,28 +235,34 @@
     ]
   },
   "projet17": {
-    "date": "Fevrier 2023",
-    "titre": "Folliage Conquest Tower",
-    "description": "\tLors de ce projet étudiant réalisé avec des étudiants du <strong>Gaming Campus</strong>, j'ai eu l'opportunité de créer de nombreux éléments 3D et de partager beaucoup de connaissances durant cette période.\nJ'ai principalement utilisé <strong>Blender</strong> pour la modélisation et l'unwrap. En ce qui concerne les textures, je les ai réalisées avec <strong>Substance Painter</strong>.",
+    "date": "Juin 2025",
+    "titre": "Projet Orange Deskless Workers",
+    "description": "Projet confidentiel, production de contenue vidéo en images de synthèses à des fins démonstratives.",
     "details": [
-      "3d",
+      "3D",
       "Blender",
-      "Lightning",
-      "Modelling",
-      "Texturing",
-      "substancepainter"
+      "Vidéo"
     ],
     "images": [
-      "/uploads/folliage1.webp",
-      "/uploads/folliage2.webp",
-      "/uploads/folliage3.webp",
-      "/uploads/folliage4.webp",
-      "/uploads/folliage5.webp",
-      "/uploads/folliage6.webp",
-      "/uploads/folliage7.webp",
-      "/uploads/folliage8.webp",
-      "/uploads/folliage.webp"
-
+      "/uploads/projet-orange-deskless-workers-1.png"
+    ]
+  },
+  "projet18": {
+    "date": "Mai 2025",
+    "titre": "Journée du crime et de la science, dispositif interactif",
+    "description": "Les 23, 24 et 25 mai, se déroulait les journées du crime et de la science à Ploeumeur-Bodou. Dans ce cadre, nous avons développé un dispositif interactif en Réalité Augmentée destinée aux jeunes publiques et amateur de technologies interactive.\nPas moins de 230 personnes ont testé ce dispositif par groupe de 2 à 3 personnes, avec une majorité d'enfants et parents. Durant l'événement, je guidai les usagers en leur expliquant les règles du jeu et le fonctionnement des dispositifs.\n\nUn grand merci à tous les acteurs de ce projet fabuleux !\nvoir [Reportage France 3 Bretagne](https://www.youtube.com/watch?v=QBAhmnab_c0&t=33s)",
+    "details": [
+      "3D",
+      "Unity",
+      "Blender"
+    ],
+    "images": [
+      "/uploads/journée-du-crime-et-de-la-science,-dispositif-interactif-1.webp",
+      "/uploads/journée-du-crime-et-de-la-science,-dispositif-interactif-4.webp",
+      "/uploads/journée-du-crime-et-de-la-science,-dispositif-interactif-1.webp",
+      "/uploads/journée-du-crime-et-de-la-science,-dispositif-interactif-3.webp",
+      "/uploads/journée-du-crime-et-de-la-science,-dispositif-interactif-2.webp",
+      "/uploads/journée-du-crime-et-de-la-science,-dispositif-interactif-5.webp"
     ]
   }
 }
