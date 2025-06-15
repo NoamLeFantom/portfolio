@@ -56,7 +56,7 @@ const HP_Top: React.FC<ColorBackground> = ({ BackgroundFill }) => {
           <p>Découvrez via ce portfolio fait main, ma créativité, mon enthousiasme et ma passion.</p>
       </div>
       <div className={styles.link}>
-        <a style={{padding:"10px"}} href="/ContactPage">
+        <a style={{padding:"20px"}} href="/ContactPage">
           Télécharger mon CV
         </a>
       </div>
