@@ -150,7 +150,6 @@ const Header: React.FC<ColorBackground> = ({ BackgroundFill }) => {
                 >
                   <a href="/SkillsPage">Cartographie de Compétences</a>
                   <a href="/CablesGLPage">Projets Cables.GL</a>
-                  <a href="#">Link 3</a>
                 </div>
               </div>
             </li>
