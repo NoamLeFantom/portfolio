@@ -1,0 +1,126 @@
+.HP_Pres_container {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1rem;
+    z-index: 0;
+    color: #3D312E;
+    align-items: center;
+
+    h1 {
+        grid-column: 2/3;
+        text-align: center;
+        justify-content: center;
+        color: #3D312E;
+    }
+
+    .photoDeProfil {
+        grid-column: 1/3;
+        display: flex;
+        position: relative;
+        border-style: none;
+        // border-radius: 10%;
+        max-width: 60%;
+    }
+
+    .text {
+        p {
+            text-align: left;
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 740px) {
+        display: grid;
+
+        h1 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 90%;
+            text-align: left;
+        }
+
+        .photoDeProfil {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            max-width: 80%;
+        }
+
+        .text {
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-rows: auto auto;
+
+        .photoDeProfil {
+            grid-column: 1/2;
+            grid-row: 1/4;
+            max-height: 100%;
+            max-width: 70%;
+            padding: 5%;
+        }
+
+        .text {
+            height: 100%;
+            align-items: flex-start;
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}
+
+.link {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        color: #EFEFEF;
+        background-color: #66271F;
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+        transition-duration: 0.3s;
+
+        &:hover {
+            background-color: #EA5930;
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+        }
+    }
+    grid-column: 2/3;
+}
+.changingWord {
+    animation: fadeIn 0.5s ease-in-out;
+    @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(5px);
+      }
+    
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    }
+  }
+  .changingWord {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
+  

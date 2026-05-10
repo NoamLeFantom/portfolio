@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+    <title>FicheMémoire - Formulaire fin</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const resourceSelector = document.getElementById('resourceSelector');
+            const formulaire = document.getElementById('formulaire');
+
+            // Charger la liste des ressources
+            fetch('/resources')
+                .then(response => response.json())
+                .then(resources => {
+                    resources.forEach(resource => {
+                        const option = document.createElement('option');
+                        option.value = resource;
+                        option.textContent = resource;
+                        resourceSelector.appendChild(option);
+                    });
+                });
+
+            // Charger les détails de la ressource sélectionnée
+            resourceSelector.addEventListener('change', () => {
+                const resourceName = resourceSelector.value;
+                if (resourceName) {
+                    fetch(`/resources/${resourceName}`)
+                        .then(response => response.json())
+                        .then(resource => {
+                            document.getElementById('ressource').value = resource.name;
+                            document.getElementById('matiere').value = resource.matiere;
+                            document.getElementById('nom').value = resource.nom;
+                            document.getElementById('contexteobjectifresultats').value = resource.contexteobjectifresultats;
+                            document.getElementById('productionrealisation').value = resource.productionrealisation;
+                            document.getElementById('competencemethode').value = resource.competencemethode;
+                            document.getElementById('bp').value = resource.bp;
+                            document.getElementById('comprendrert').value = resource.comprendrert;
+                            document.getElementById('concevoirrt').value = resource.concevoirrt;
+                            document.getElementById('exprimerrt').value = resource.exprimerrt;
+                            document.getElementById('developperrt').value = resource.developperrt;
+                            document.getElementById('entreprendrert').value = resource.entreprendrert;
+                            document.getElementById('comprendreEvalEnd').value = resource.autoEvalEnd[0].comprendreEvalEnd;
+                            document.getElementById('concevoirEvalEnd').value = resource.autoEvalEnd[0].concevoirEvalEnd;
+                            document.getElementById('exprimerEvalEnd').value = resource.autoEvalEnd[0].exprimerEvalEnd;
+                            document.getElementById('developperEvalEnd').value = resource.autoEvalEnd[0].developperEvalEnd;
+                            document.getElementById('entreprendreEvalEnd').value = resource.autoEvalEnd[0].entreprendreEvalEnd;
+
+                            // Remplir les champs spécifiques comme comprendre, entreprendre, etc.
+                            ['comprendre', 'entreprendre', 'developper', 'exprimer', 'concevoir'].forEach(field => {
+                                const values = resource.children.filter(child => child.group === field).map(child => child.name);
+                                document.getElementById(field).value = values.join(', ');
+                            });
+                        });
+                } else {
+                    // Réinitialiser le formulaire si aucune ressource n'est sélectionnée
+                    formulaire.reset();
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .popup.show {
+            display: block;
+        }
+
+        .popup .close {
+            display: block;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<header>
+    <nav class="container_menuBurger">
+        <div class="logo"><a href="index.html">Portfolio.</a></div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a class="menuItem" href="index.html">Accuille</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="form.html" style="color: #fff;"> Faire mes fiches mémoire</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="fichememoire.html">Mes fiches mémoire</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="sunburst.html">Sunburst MMI</a>
+                </li>
+            </ul>
+        </div>
+        <button class="hamburger icon-45px">
+            <svg id="ic_menu_interactionA" class="" width="31" height="23" viewBox="0 0 31 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0312 11.5C30.0312 10.7233 29.4016 10.0938 28.625 10.0938H2.375C1.59835 10.0938 0.96875 10.7233 0.96875 11.5C0.96875 12.2767 1.59835 12.9062 2.375 12.9062H28.625C29.4016 12.9062 30.0312 12.2767 30.0312 11.5Z"
+                    fill="#264653" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0312 2.125C30.0312 1.34835 29.4016 0.71875 28.625 0.71875H2.375C1.59835 0.71875 0.96875 1.34835 0.96875 2.125C0.96875 2.90165 1.59835 3.53125 2.375 3.53125H28.625C29.4016 3.53125 30.0312 2.90165 30.0312 2.125Z"
+                    fill="#264653" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0312 20.875C30.0312 20.0983 29.4016 19.4688 28.625 19.4688H2.375C1.59835 19.4688 0.96875 20.0983 0.96875 20.875C0.96875 21.6517 1.59835 22.2812 2.375 22.2812H28.625C29.4016 22.2812 30.0312 21.6517 30.0312 20.875Z"
+                    fill="#264653" />
+            </svg>
+            <svg id="ic_menu_interactionB" class="ic_menu_none_visibility" width="25" height="27" viewBox="0 0 25 27"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.25" y1="-1.25" x2="32.8092" y2="-1.25"
+                    transform="matrix(0.679134 -0.734015 0.679134 0.734015 1.86914 27)" stroke="#264653"
+                    stroke-width="2.5" stroke-linecap="round" />
+                <line x1="1.25" y1="-1.25" x2="32.8092" y2="-1.25"
+                    transform="matrix(0.679134 0.734015 -0.679134 0.734015 0 2)" stroke="#264653" stroke-width="2.5"
+                    stroke-linecap="round" />
+            </svg>
+        </button>
+    </nav>
+</header>
+<script>
+    ///////////////////////////////////////////
+    const menu = document.querySelector(".menu");
+    const menuItems = document.querySelectorAll(".menuItem");
+    const hamburger = document.querySelector(".hamburger");
+    const closeIcon = document.querySelector(".closeIcon");
+    const menuIcon = document.querySelector(".menuIcon");
+
+    const ic_menuA = document.querySelector("#ic_menu_interactionA");
+    const ic_menuB = document.querySelector("#ic_menu_interactionB");
+
+    function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            ic_menuA.classList.remove("ic_menu_none_visibility");
+            ic_menuB.classList.add("ic_menu_none_visibility");
+        } else {
+            menu.classList.add("showMenu");
+            ic_menuA.classList.add("ic_menu_none_visibility");
+            ic_menuB.classList.remove("ic_menu_none_visibility");
+        }
+    }
+
+    hamburger.addEventListener("click", toggleMenu);    
+</script>
+
+
+<body>
+    <form id="formulaire" action="/form-update" method="POST" enctype="multipart/form-data">
+        <div class="flexRow-2">
+            <div>
+                <label for="resourceSelector">Sélectionner ou ajouter une ressource : </label>
+                <select id="resourceSelector" class="form_champ" name="resourceSelector">
+                    <option value="add-new">--Ajouter une ressource--</option>
+                </select>
+            </div>
+        </div>
+        <div id="existingResourceFields" style="display: none;">
+            <div class="flexRow-3">
+                <div>
+                    <label class="form_champ" for="ressource">Ressource:</label>
+                    <input class="form_champ" type="text" id="ressource" name="ressource">
+                </div>
+                <div>
+                    <label class="form_champ" for="matiere">Matière:</label>
+                    <input class="form_champ" type="text" id="matiere" name="matiere">
+                </div>
+                <div><label class="form_champ" for="nom">Nom:</label>
+                    <input class="form_champ" type="text" id="nom" name="nom" accept="image/*">
+                </div>
+
+            </div>
+
+            <label class="form_champ" for="contexteobjectifresultats">Contexte & objectifs de résultats:</label>
+            <textarea rows="5" cols="33" class="form_champ" type="text" id="contexteobjectifresultats"
+                name="contexteobjectifresultats"></textarea>
+
+            <label class="form_champ" for="productionrealisation">Production / travail réalisé:</label>
+            <textarea rows="5" cols="33" class="form_champ" type="text" id="productionrealisation"
+                name="productionrealisation"></textarea>
+
+            <label class="form_champ" for="competencemethode">Compétences – méthodes : mobilisées / développées
+                /
+                acquises:</label>
+            <textarea rows="5" cols="33" class="form_champ" type="text" id="competencemethode"
+                name="competencemethode"></textarea>
+
+            <label class="form_champ" for="bp">Bilan Personnel:</label>
+            <textarea rows="5" cols="33" class="form_champ" type="text" id="bp" name="bp"></textarea>
+
+            <label for="image">Image :</label>
+            <input id="imageInput" type="file" name="image" accept="image/*">
+
+            <div class="flexRow-2">
+                <div>
+                    <label class="form_champ" for="comprendrert">Comprendre %:</label>
+                    <!-- <input class="form_champ" type="text" id="comprendrert" name="comprendrert"> -->
+                    <select class="form_champ" name="comprendrert" id="comprendrert">
+                        <option value="">1-10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form_champ" for="comprendre">Comprendre (mots clés) :</label>
+                    <input class="form_champ" type="text" id="comprendre" name="comprendre">
+                </div>
+            </div>
+
+            <div class="flexRow-2">
+                <div class="col1">
+                    <label class="form_champ" for="concevoirrt">Concevoir %:</label>
+                    <select class="form_champ" name="concevoirrt" id="concevoirrt">
+                        <option value="">1-10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="col2">
+                    <label class="form_champ" for="concevoir">Concevoir (mots clés) :</label>
+                    <input class="form_champ" type="text" id="concevoir" name="concevoir">
+                </div>
+            </div>
+
+            <div class="flexRow-2">
+                <div>
+                    <label class="form_champ" for="exprimerrt">Exprimer %:</label>
+                    <select class="form_champ" name="exprimerrt" id="exprimerrt">
+                        <option value="">1-10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form_champ" for="exprimer">Exprimer (mots clés) :</label>
+                    <input class="form_champ" type="text" id="exprimer" name="exprimer">
+                </div>
+
+            </div>
+
+            <div class="flexRow-2">
+                <div>
+                    <label class="form_champ" for="developperrt">Développer %:</label>
+                    <select class="form_champ" name="developperrt" id="developperrt">
+                        <option value="">1-10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form_champ" for="developper">Développer (mots clés) :</label>
+                    <input class="form_champ" type="text" id="developper" name="developper">
+                </div>
+
+            </div>
+
+            <div class="flexRow-2">
+                <div><label class="form_champ" for="entreprendrert">Entreprendre %:</label>
+                    <select class="form_champ" name="entreprendrert" id="entreprendrert">
+                        <option value="">1-10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form_champ" for="entreprendre">Entreprendre (mots clés) :</label>
+                    <input class="form_champ" type="text" id="entreprendre" name="entreprendre">
+                </div>
+
+            </div>
+            <section class="autoeval">
+                <div>
+                    <h1>Auto-évaluation de fin de module</h1>
+                </div>
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="comprendreEvalEnd">Comprendre %:</label>
+                        <!-- <input class="form_champ" type="text" id="comprendreEvalEnd" name="comprendreEvalEnd"> -->
+                        <select class="form_champ" name="comprendreEvalEnd" id="comprendreEvalEnd">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="concevoirEvalEnd">Concevoir %:</label>
+                        <select class="form_champ" name="concevoirEvalEnd" id="concevoirEvalEnd">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div>
+                        <label class="form_champ" for="exprimerEvalEnd">Exprimer %:</label>
+                        <select class="form_champ" name="exprimerEvalEnd" id="exprimerEvalEnd">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div>
+                        <label class="form_champ" for="developperEvalEnd">Développer %:</label>
+                        <select class="form_champ" name="developperEvalEnd" id="developperEvalEnd">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div><label class="form_champ" for="entreprendreEvalEnd">Entreprendre %:</label>
+                        <select class="form_champ" name="entreprendreEvalEnd" id="entreprendreEvalEnd">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Auto évaluation début de module -->
+
+        <div id="newResourceFields">
+            <section class="autoeval">
+                <div>
+                    <h1>Auto-évaluation de fin de module</h1>
+                </div>
+                <div class="flexRow-3">
+                    <div>
+                        <label class="form_champ" for="newRessource">Ressource:</label>
+                        <input class="form_champ" type="text" id="newRessource" name="newRessource">
+                    </div>
+                    <div>
+                        <label class="form_champ" for="newMatiere">Matière:</label>
+                        <input class="form_champ" type="text" id="newMatiere" name="newMatiere">
+                    </div>
+                    <div>
+                        <label class="form_champ" for="newNom">Nom:</label>
+                        <input class="form_champ" type="text" id="newNom" name="newNom">
+                    </div>
+                </div>
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="comprendreEvalStart">comprendre %:</label>
+                        <select class="form_champ" name="comprendreEvalStart" id="comprendreEvalStart">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="concevoirEvalStart">concevoir %:</label>
+                        <select class="form_champ" name="concevoirEvalStart" id="concevoirEvalStart">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="exprimerEvalStart">exprimer %:</label>
+                        <select class="form_champ" name="exprimerEvalStart" id="exprimerEvalStart">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="developperEvalStart">Développer %:</label>
+                        <select class="form_champ" name="developperEvalStart" id="developperEvalStart">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flexRow-2">
+                    <div class="col1">
+                        <label class="form_champ" for="entreprendreEvalStart">entreprendre %:</label>
+                        <select class="form_champ" name="entreprendreEvalStart" id="entreprendreEvalStart">
+                            <option value="">1-10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <button id="submitAndReload" type="submit">Ajouter</button>
+    </form>
+    <div id="popup" class="popup" style="display: none;">
+        <div id="popup-content" class="popup-content"></div>
+        <button id="popup-ok-button">OK</button>
+    </div>
+
+    <script>
+        //Selecteur
+        document.addEventListener('DOMContentLoaded', function () {
+            const resourceSelector = document.getElementById('resourceSelector');
+            const existingResourceFields = document.getElementById('existingResourceFields');
+            const newResourceFields = document.getElementById('newResourceFields');
+
+            resourceSelector.addEventListener('change', function () {
+                if (this.value === 'add-new') {
+                    existingResourceFields.style.display = 'none';
+                    newResourceFields.style.display = 'flex';
+                    newResourceFields.style.flexDirection = 'column';
+                } else {
+                    existingResourceFields.style.display = 'flex';
+                    existingResourceFields.style.flexDirection = 'column';
+                    newResourceFields.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('formulaire').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('/form-update', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    showPopup(data.message, data.status === 'success');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showPopup('Une erreur s\'est produite. Veuillez réessayer.', false);
+                });
+        });
+
+        function showPopup(message, type) {
+            const popup = document.getElementById('popup');
+            const popupContent = document.getElementById('popup-content');
+            const okButton = document.getElementById('popup-ok-button');
+
+            popupContent.innerText = message;
+            popup.style.display = 'block';
+
+            if (type === 'success') {
+                popup.style.backgroundColor = 'lightgreen';
+            } else if (type === 'error') {
+                popup.style.backgroundColor = 'lightcoral';
+            }
+
+            okButton.onclick = function () {
+                popup.style.display = 'none';
+                location.reload();  // Reload the page
+            };
+        }
+
+        document.getElementById('closePopup').addEventListener('click', function () {
+            document.getElementById('popupMessage').classList.remove('show');
+        });
+    </script>
+</body>
+
+</html>

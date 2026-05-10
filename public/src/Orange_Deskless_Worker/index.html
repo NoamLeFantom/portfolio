@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidéo Interactive</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        #video-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+        }
+
+        #choices {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            flex-direction: column;
+            gap: 1em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        #choices button {
+            padding: 1em;
+            font-size: 1em;
+            background: #1e90ff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #choices button:hover {
+            background: #0077cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="video-container">
+        <video id="video" controls></video>
+        <div id="choices"></div>
+    </div>
+
+    <script>
+
+        const video = document.getElementById("video");
+        const choicesDiv = document.getElementById("choices");
+
+        let story = {};
+        let currentScene = "intro";
+        let choiceShown = false;
+
+        let historyStack = [];
+
+        function monitorVideoTime() {
+            const scene = story[currentScene];
+
+            if (
+                scene.choices &&
+                scene.choices.length > 0 &&
+                scene.timeToChoose !== null &&
+                !choiceShown &&
+                video.currentTime >= scene.timeToChoose
+            ) {
+                showChoices(scene.choices);
+                choiceShown = true;
+            }
+
+            requestAnimationFrame(monitorVideoTime);
+        }
+
+        function loadScene(sceneKey) {
+            if (currentScene !== sceneKey) {
+                historyStack.push(currentScene);
+            }
+
+            const scene = story[sceneKey];
+            currentScene = sceneKey;
+            choiceShown = false;
+
+            video.src = scene.file;
+            video.load();
+            video.play();
+            choicesDiv.style.display = "none";
+            updateBackButton();
+
+            requestAnimationFrame(monitorVideoTime);
+
+        }
+
+        function showChoices(choices) {
+            choicesDiv.innerHTML = "";
+
+            // 🧭 Bouton retour
+            if (historyStack.length > 0) {
+                const backBtn = document.createElement("button");
+                backBtn.textContent = "⬅️ Retour";
+                backBtn.onclick = goBack;
+                choicesDiv.appendChild(backBtn);
+            }
+
+            // 🧠 Boutons des choix
+            choices.forEach(choice => {
+                const btn = document.createElement("button");
+                btn.textContent = choice.label;
+                btn.onclick = () => loadScene(choice.next);
+                choicesDiv.appendChild(btn);
+            });
+
+            choicesDiv.style.display = "flex";
+        }
+
+        function goBack() {
+            if (historyStack.length === 0) return;
+            const previous = historyStack.pop();
+            loadScene(previous);
+        }
+
+        function updateBackButton() {
+            // À utiliser si tu veux un bouton "Retour" permanent ailleurs que dans les choix
+        }
+
+
+        // 🔄 Charger le fichier JSON
+        fetch("content.json")
+            .then(response => response.json())
+            .then(data => {
+                story = data;
+                loadScene(currentScene);
+            })
+            .catch(error => {
+                console.error("Erreur de chargement du fichier JSON :", error);
+            });
+    </script>
+
+</body>
+
+</html>

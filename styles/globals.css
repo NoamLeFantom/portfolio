@@ -3,11 +3,62 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #3b5963;
+  background-color: #d7d7d7;
 }
+
+.GlobalPage {
+  position: relative;
+  top: 85px;
+}
+
 h1 {
-  grid-column: 1/3;
-  text-align: center;
-  justify-content: center;
-  font-size: 1.8rem;
+
+  font-size: 2rem;
+  margin: 0;
 }
+
+h2 {
+
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+
+
+.transitionyYInvert {
+  transform: scale(-1);
+}
+
+@media screen and (min-width: 1024px) {
+  .transitionSpecial {
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .transitionSpecial {
+    margin-top: -100px;
+  }
+}
+
+a {
+  padding: 20px;
+}
+
+.homeSubTitle {
+  padding-left: 20px;
+}
+
+.pdfViewer
+{
+    width: 100%;
+    height: 390px;
+    
+}
+@media screen and (min-width: 740px) {
+  .pdfViewer
+  {
+    width: 75%;
+    height: 800px;
+  }
+}
+
